@@ -22,7 +22,7 @@ Las credenciales se generan localmente con valores aleatorios y se guardan en `.
 
 El workflow CI instala con `npm ci`, ejecuta pruebas de API, compila el frontend y comprueba dependencias. Luego levanta los contenedores y ejecuta la prueba de integración contra CouchDB real.
 
-Este último paso importa porque una prueba con una base simulada no detecta todos los problemas de conexión, permisos o revisiones del servidor real. Los resultados de Actions deben consultarse por ejecución: que el archivo exista en el repositorio no significa que el trabajo haya terminado correctamente.
+La primera ejecución falló al iniciar CouchDB. El contenedor ajusta permisos de sus archivos y el montaje de configuración de solo lectura interfería con ese arranque. La solución fue copiar la configuración con el propietario correcto durante la construcción de una imagen derivada de `couchdb:3.5.0`. La [ejecución CI #3](https://github.com/CodexVex/TechInventory/actions/runs/43322534919) completó las seis pruebas de API y la integración real. Esta diferencia entre una prueba aislada y una prueba con el servidor real fue una evidencia concreta del proyecto.
 
 El workflow de despliegue está preparado para iniciarse después de un CI exitoso en `main`. Utiliza el commit que pasó la validación, envía sus archivos al servidor por SSH y ejecuta Compose. Su activación requiere configurar el destino y secretos; no se publica un supuesto resultado mientras esos requisitos falten.
 

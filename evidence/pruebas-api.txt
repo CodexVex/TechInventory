@@ -1,0 +1,18 @@
+
+> techinventory@1.0.0 test
+> node --test tests/*.test.js
+
+✔ protected inventory rejects anonymous access (65.371666ms)
+✔ invalid password rejected and cookie is HttpOnly (101.756958ms)
+✔ CRUD, filtering, statistics and revision conflict (81.391625ms)
+✔ CSRF and strict input validation (74.582833ms)
+✔ viewer cannot modify inventory; logout removes access (75.074042ms)
+✔ database outage health endpoint returns 503 (1.040708ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 524.289875

@@ -1,0 +1,544 @@
+verify	Set up job	﻿2026-11-12T22:43:40.2431863Z Current runner version: '2.338.2'
+verify	Set up job	2026-11-12T22:43:40.2460648Z ##[group]Runner Image Provisioner
+verify	Set up job	2026-11-12T22:43:40.2461562Z Hosted Compute Agent
+verify	Set up job	2026-11-12T22:43:40.2462282Z Version: 20261103.629
+verify	Set up job	2026-11-12T22:43:40.2462936Z Commit: 15dbd9ccb5dbf34fae002b6ed1a2670f52df37bc
+verify	Set up job	2026-11-12T22:43:40.2463718Z Build Date: 2026-11-03T17:26:59Z
+verify	Set up job	2026-11-12T22:43:40.2464518Z Worker ID: {32d7fe8e-ce32-4c56-9689-ad5da9ca6991}
+verify	Set up job	2026-11-12T22:43:40.2465211Z Region: westus
+verify	Set up job	2026-11-12T22:43:40.2465824Z Cloud: Azure
+verify	Set up job	2026-11-12T22:43:40.2466411Z ##[endgroup]
+verify	Set up job	2026-11-12T22:43:40.2467994Z ##[group]Operating System
+verify	Set up job	2026-11-12T22:43:40.2468716Z Ubuntu
+verify	Set up job	2026-11-12T22:43:40.2469245Z 24.04.5
+verify	Set up job	2026-11-12T22:43:40.2470230Z LTS
+verify	Set up job	2026-11-12T22:43:40.2470777Z ##[endgroup]
+verify	Set up job	2026-11-12T22:43:40.2471331Z ##[group]Runner Image
+verify	Set up job	2026-11-12T22:43:40.2472084Z Image: ubuntu-24.04
+verify	Set up job	2026-11-12T22:43:40.2472658Z Version: 20261111.370.1
+verify	Set up job	2026-11-12T22:43:40.2473774Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261111.370/images/ubuntu/Ubuntu2404-Readme.md
+verify	Set up job	2026-11-12T22:43:40.2475508Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261111.370
+verify	Set up job	2026-11-12T22:43:40.2476629Z ##[endgroup]
+verify	Set up job	2026-11-12T22:43:40.2478051Z ##[group]GITHUB_TOKEN Permissions
+verify	Set up job	2026-11-12T22:43:40.2480983Z Contents: read
+verify	Set up job	2026-11-12T22:43:40.2481644Z Metadata: read
+verify	Set up job	2026-11-12T22:43:40.2482346Z ##[endgroup]
+verify	Set up job	2026-11-12T22:43:40.2484526Z Secret source: Actions
+verify	Set up job	2026-11-12T22:43:40.2485613Z Cache mode: write
+verify	Set up job	2026-11-12T22:43:40.2486343Z Prepare workflow directory
+verify	Set up job	2026-11-12T22:43:40.2928410Z Prepare all required actions
+verify	Set up job	2026-11-12T22:43:40.2979694Z Getting action download info
+verify	Set up job	2026-11-12T22:43:40.6528982Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+verify	Set up job	2026-11-12T22:43:40.7884505Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+verify	Set up job	2026-11-12T22:43:40.9902053Z Complete job name: verify
+verify	Run actions/checkout@v4	﻿2026-11-12T22:43:41.0832717Z ##[group]Run actions/checkout@v4
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.0833685Z with:
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.0834159Z   repository: CodexVex/TechInventory
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.0837958Z   token: ***
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.0838395Z   ssh-strict: true
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.0838829Z   ssh-user: git
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.0839270Z   persist-credentials: true
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.0840085Z   clean: true
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.0840538Z   sparse-checkout-cone-mode: true
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.0841055Z   fetch-depth: 1
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.0841479Z   fetch-tags: false
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.0841922Z   show-progress: true
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.0842358Z   lfs: false
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.0842768Z   submodules: false
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.0843213Z   set-safe-directory: true
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.0843709Z   allow-unsafe-pr-checkout: false
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.0844546Z ##[endgroup]
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.6033633Z Syncing repository: CodexVex/TechInventory
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.6036696Z ##[group]Getting Git version info
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.6037585Z Working directory is '/home/runner/work/TechInventory/TechInventory'
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.6038774Z [command]/usr/bin/git version
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.6157960Z git version 2.56.1
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.6184330Z ##[endgroup]
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.6203155Z Temporarily overriding HOME='/home/runner/work/_temp/3a224d12-a5d5-4ef6-8aa9-5c1c589830df' before making global git config changes
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.6206118Z Adding repository directory to the temporary git global config as a safe directory
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.6210478Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/TechInventory/TechInventory
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.6285511Z Deleting the contents of '/home/runner/work/TechInventory/TechInventory'
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.6292245Z ##[group]Initializing the repository
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.6298253Z [command]/usr/bin/git init /home/runner/work/TechInventory/TechInventory
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.6422214Z hint: Using 'master' as the name for the initial branch. This default branch name
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.6424364Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.6426596Z hint: to use in all of your new repositories, which will suppress this warning,
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.6428066Z hint: call:
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.6428763Z hint:
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.6429987Z hint: 	git config --global init.defaultBranch <name>
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.6431047Z hint:
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.6432030Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.6433667Z hint: 'development'. The just-created branch can be renamed via this command:
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.6434989Z hint:
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.6435694Z hint: 	git branch -m <name>
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.6436491Z hint:
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.6437540Z hint: Disable this message with "git config set advice.defaultBranchName false"
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.6439571Z Initialized empty Git repository in /home/runner/work/TechInventory/TechInventory/.git/
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.6446904Z [command]/usr/bin/git remote add origin https://github.com/CodexVex/TechInventory
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.6510650Z ##[endgroup]
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.6512294Z ##[group]Disabling automatic garbage collection
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.6516810Z [command]/usr/bin/git config --local gc.auto 0
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.6558701Z ##[endgroup]
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.6560783Z ##[group]Setting up auth
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.6568309Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.6619136Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.7130661Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.7182225Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.7444590Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.7492155Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.7763943Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.7815608Z ##[endgroup]
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.7817149Z ##[group]Fetching the repository
+verify	Run actions/checkout@v4	2026-11-12T22:43:41.7829518Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +d68784ae4a2659445594bf31e9cb0e7598bd4380:refs/remotes/origin/main
+verify	Run actions/checkout@v4	2026-11-12T22:43:42.1639711Z From https://github.com/CodexVex/TechInventory
+verify	Run actions/checkout@v4	2026-11-12T22:43:42.1642086Z  * [new ref]         d68784ae4a2659445594bf31e9cb0e7598bd4380 -> origin/main
+verify	Run actions/checkout@v4	2026-11-12T22:43:42.1647282Z ##[endgroup]
+verify	Run actions/checkout@v4	2026-11-12T22:43:42.1648793Z ##[group]Determining the checkout info
+verify	Run actions/checkout@v4	2026-11-12T22:43:42.1651574Z ##[endgroup]
+verify	Run actions/checkout@v4	2026-11-12T22:43:42.1660743Z [command]/usr/bin/git sparse-checkout disable
+verify	Run actions/checkout@v4	2026-11-12T22:43:42.1744799Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+verify	Run actions/checkout@v4	2026-11-12T22:43:42.1794794Z ##[group]Checking out the ref
+verify	Run actions/checkout@v4	2026-11-12T22:43:42.1810565Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+verify	Run actions/checkout@v4	2026-11-12T22:43:42.1905957Z Switched to a new branch 'main'
+verify	Run actions/checkout@v4	2026-11-12T22:43:42.1911677Z branch 'main' set up to track 'origin/main'.
+verify	Run actions/checkout@v4	2026-11-12T22:43:42.1918732Z ##[endgroup]
+verify	Run actions/checkout@v4	2026-11-12T22:43:42.1975068Z [command]/usr/bin/git log -1 --format=%H
+verify	Run actions/checkout@v4	2026-11-12T22:43:42.2012501Z d68784ae4a2659445594bf31e9cb0e7598bd4380
+verify	Run actions/setup-node@v4	﻿2026-11-12T22:43:42.2437414Z ##[group]Run actions/setup-node@v4
+verify	Run actions/setup-node@v4	2026-11-12T22:43:42.2438677Z with:
+verify	Run actions/setup-node@v4	2026-11-12T22:43:42.2439691Z   node-version: 24
+verify	Run actions/setup-node@v4	2026-11-12T22:43:42.2440597Z   cache: npm
+verify	Run actions/setup-node@v4	2026-11-12T22:43:42.2441451Z   always-auth: false
+verify	Run actions/setup-node@v4	2026-11-12T22:43:42.2442390Z   check-latest: false
+verify	Run actions/setup-node@v4	2026-11-12T22:43:42.2452694Z   token: ***
+verify	Run actions/setup-node@v4	2026-11-12T22:43:42.2453580Z ##[endgroup]
+verify	Run actions/setup-node@v4	2026-11-12T22:43:42.4072859Z (node:2300) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+verify	Run actions/setup-node@v4	2026-11-12T22:43:42.4077279Z (Use `node --trace-deprecation ...` to show where the warning was created)
+verify	Run actions/setup-node@v4	2026-11-12T22:43:42.4079748Z Found in cache @ /opt/hostedtoolcache/node/24.22.2/x64
+verify	Run actions/setup-node@v4	2026-11-12T22:43:42.4082245Z ##[group]Environment details
+verify	Run actions/setup-node@v4	2026-11-12T22:43:42.8854181Z node: v24.22.2
+verify	Run actions/setup-node@v4	2026-11-12T22:43:42.8854844Z npm: 11.19.1
+verify	Run actions/setup-node@v4	2026-11-12T22:43:42.8855306Z yarn: 1.22.22
+verify	Run actions/setup-node@v4	2026-11-12T22:43:42.8857535Z ##[endgroup]
+verify	Run actions/setup-node@v4	2026-11-12T22:43:42.8907683Z [command]/opt/hostedtoolcache/node/24.22.2/x64/bin/npm config get cache
+verify	Run actions/setup-node@v4	2026-11-12T22:43:43.0043054Z /home/runner/.npm
+verify	Run actions/setup-node@v4	2026-11-12T22:43:43.2702892Z npm cache is not found
+verify	Run npm ci	﻿2026-11-12T22:43:43.2867450Z ##[group]Run npm ci
+verify	Run npm ci	2026-11-12T22:43:43.2867806Z ^[[36;1mnpm ci^[[0m
+verify	Run npm ci	2026-11-12T22:43:43.2901750Z shell: /usr/bin/bash -e {0}
+verify	Run npm ci	2026-11-12T22:43:43.2902051Z ##[endgroup]
+verify	Run npm ci	2026-11-12T22:43:45.5249907Z 
+verify	Run npm ci	2026-11-12T22:43:45.5257468Z added 108 packages, and audited 109 packages in 2s
+verify	Run npm ci	2026-11-12T22:43:45.5258072Z 
+verify	Run npm ci	2026-11-12T22:43:45.5258357Z 42 packages are looking for funding
+verify	Run npm ci	2026-11-12T22:43:45.5258837Z   run `npm fund` for details
+verify	Run npm ci	2026-11-12T22:43:45.5262103Z 
+verify	Run npm ci	2026-11-12T22:43:45.5262416Z found 0 vulnerabilities
+verify	Run npm ci	2026-11-12T22:43:45.5271809Z npm warn install-scripts 1 package has install scripts not yet covered by allowScripts:
+verify	Run npm ci	2026-11-12T22:43:45.5272634Z npm warn install-scripts   esbuild@0.28.2 (postinstall: node install.js)
+verify	Run npm ci	2026-11-12T22:43:45.5273142Z npm warn install-scripts
+verify	Run npm ci	2026-11-12T22:43:45.5273858Z npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+verify	Run npm test	﻿2026-11-12T22:43:45.5821231Z ##[group]Run npm test
+verify	Run npm test	2026-11-12T22:43:45.5821576Z ^[[36;1mnpm test^[[0m
+verify	Run npm test	2026-11-12T22:43:45.5842894Z shell: /usr/bin/bash -e {0}
+verify	Run npm test	2026-11-12T22:43:45.5843199Z ##[endgroup]
+verify	Run npm test	2026-11-12T22:43:45.6900735Z 
+verify	Run npm test	2026-11-12T22:43:45.6901532Z > techinventory@1.0.0 test
+verify	Run npm test	2026-11-12T22:43:45.6902067Z > node --test tests/*.test.js
+verify	Run npm test	2026-11-12T22:43:45.6902373Z 
+verify	Run npm test	2026-11-12T22:43:46.1587228Z ✔ protected inventory rejects anonymous access (124.640606ms)
+verify	Run npm test	2026-11-12T22:43:46.3152101Z ✔ invalid password rejected and cookie is HttpOnly (160.343837ms)
+verify	Run npm test	2026-11-12T22:43:46.4497094Z ✔ CRUD, filtering, statistics and revision conflict (133.940407ms)
+verify	Run npm test	2026-11-12T22:43:46.5687020Z ✔ CSRF and strict input validation (120.09466ms)
+verify	Run npm test	2026-11-12T22:43:46.6157442Z ✔ viewer cannot modify inventory; logout removes access (117.592682ms)
+verify	Run npm test	2026-11-12T22:43:46.6178386Z ✔ database outage health endpoint returns 503 (3.60788ms)
+verify	Run npm test	2026-11-12T22:43:46.6334018Z ℹ tests 6
+verify	Run npm test	2026-11-12T22:43:46.6334494Z ℹ suites 0
+verify	Run npm test	2026-11-12T22:43:46.6340161Z ℹ pass 6
+verify	Run npm test	2026-11-12T22:43:46.6340973Z ℹ fail 0
+verify	Run npm test	2026-11-12T22:43:46.6341395Z ℹ cancelled 0
+verify	Run npm test	2026-11-12T22:43:46.6341809Z ℹ skipped 0
+verify	Run npm test	2026-11-12T22:43:46.6342087Z ℹ todo 0
+verify	Run npm test	2026-11-12T22:43:46.6342399Z ℹ duration_ms 904.372295
+verify	Run npm run build	﻿2026-11-12T22:43:46.6497642Z ##[group]Run npm run build
+verify	Run npm run build	2026-11-12T22:43:46.6497963Z ^[[36;1mnpm run build^[[0m
+verify	Run npm run build	2026-11-12T22:43:46.6518643Z shell: /usr/bin/bash -e {0}
+verify	Run npm run build	2026-11-12T22:43:46.6518905Z ##[endgroup]
+verify	Run npm run build	2026-11-12T22:43:46.7507342Z 
+verify	Run npm run build	2026-11-12T22:43:46.7508054Z > techinventory@1.0.0 build
+verify	Run npm run build	2026-11-12T22:43:46.7508624Z > vite build --config client/vite.config.js
+verify	Run npm run build	2026-11-12T22:43:46.7508930Z 
+verify	Run npm run build	2026-11-12T22:43:46.9905097Z ^[[36mvite v7.3.8 ^[[32mbuilding client environment for production...^[[36m^[[39m
+verify	Run npm run build	2026-11-12T22:43:47.0576376Z transforming...
+verify	Run npm run build	2026-11-12T22:43:47.9126063Z ^[[32m✓^[[39m 23 modules transformed.
+verify	Run npm run build	2026-11-12T22:43:48.0487901Z rendering chunks...
+verify	Run npm run build	2026-11-12T22:43:48.0562156Z computing gzip size...
+verify	Run npm run build	2026-11-12T22:43:48.0681526Z ^[[2m../dist/^[[22m^[[32mindex.html                 ^[[39m^[[1m^[[2m  0.38 kB^[[22m^[[1m^[[22m^[[2m │ gzip:  0.28 kB^[[22m
+verify	Run npm run build	2026-11-12T22:43:48.0683634Z ^[[2m../dist/^[[22m^[[2massets/^[[22m^[[35mindex-BZpkwoxN.css  ^[[39m^[[1m^[[2m  4.37 kB^[[22m^[[1m^[[22m^[[2m │ gzip:  1.53 kB^[[22m
+verify	Run npm run build	2026-11-12T22:43:48.0685734Z ^[[2m../dist/^[[22m^[[2massets/^[[22m^[[36mindex-DQsQ4Kn1.js   ^[[39m^[[1m^[[2m230.12 kB^[[22m^[[1m^[[22m^[[2m │ gzip: 71.82 kB^[[22m
+verify	Run npm run build	2026-11-12T22:43:48.0687579Z ^[[32m✓ built in 1.05s^[[39m
+verify	Run npm audit --omit=dev --audit-level=high	﻿2026-11-12T22:43:48.1126196Z ##[group]Run npm audit --omit=dev --audit-level=high
+verify	Run npm audit --omit=dev --audit-level=high	2026-11-12T22:43:48.1126657Z ^[[36;1mnpm audit --omit=dev --audit-level=high^[[0m
+verify	Run npm audit --omit=dev --audit-level=high	2026-11-12T22:43:48.1147799Z shell: /usr/bin/bash -e {0}
+verify	Run npm audit --omit=dev --audit-level=high	2026-11-12T22:43:48.1148088Z ##[endgroup]
+verify	Run npm audit --omit=dev --audit-level=high	2026-11-12T22:43:48.5211086Z found 0 vulnerabilities
+verify	Run npm run setup	﻿2026-11-12T22:43:48.5354708Z ##[group]Run npm run setup
+verify	Run npm run setup	2026-11-12T22:43:48.5355063Z ^[[36;1mnpm run setup^[[0m
+verify	Run npm run setup	2026-11-12T22:43:48.5375037Z shell: /usr/bin/bash -e {0}
+verify	Run npm run setup	2026-11-12T22:43:48.5375351Z ##[endgroup]
+verify	Run npm run setup	2026-11-12T22:43:48.6397507Z 
+verify	Run npm run setup	2026-11-12T22:43:48.6398007Z > techinventory@1.0.0 setup
+verify	Run npm run setup	2026-11-12T22:43:48.6398643Z > node scripts/setup.js
+verify	Run npm run setup	2026-11-12T22:43:48.6398860Z 
+verify	Run npm run setup	2026-11-12T22:43:48.6798898Z Created .env with random credentials. Read ADMIN_PASSWORD locally; do not publish it.
+verify	Run docker compose up -d --build --wait --wait-timeout 180	﻿2026-11-12T22:43:48.6952534Z ##[group]Run docker compose up -d --build --wait --wait-timeout 180
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:48.6953080Z ^[[36;1mdocker compose up -d --build --wait --wait-timeout 180^[[0m
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:48.6973446Z shell: /usr/bin/bash -e {0}
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:48.6973714Z ##[endgroup]
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:49.6596586Z #1 [internal] load local bake definitions
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:49.8067472Z #1 reading from stdin 713B done
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:49.8068111Z #1 DONE 0.0s
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:49.9882390Z 
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:49.9883598Z #2 [app internal] load build definition from Dockerfile
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:49.9884422Z #2 transferring dockerfile: 390B done
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:49.9884936Z #2 DONE 0.0s
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:49.9885155Z 
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:49.9885646Z #3 [couchdb internal] load build definition from Dockerfile.couchdb
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:49.9886449Z #3 transferring dockerfile: 146B done
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:49.9886938Z #3 DONE 0.0s
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:49.9887157Z 
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:49.9887655Z #4 [app internal] load metadata for docker.io/library/node:24-alpine
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:50.2163476Z #4 ...
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:50.2163742Z 
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:50.2164113Z #5 [auth] library/node:pull token for registry-1.docker.io
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:50.2164645Z #5 DONE 0.0s
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:50.2164822Z 
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:50.2165161Z #6 [auth] library/couchdb:pull token for registry-1.docker.io
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:50.2165639Z #6 DONE 0.0s
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:50.3666770Z 
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:50.3667903Z #7 [couchdb internal] load metadata for docker.io/library/couchdb:3.5.0
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:50.6820513Z #7 ...
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:50.6820931Z 
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:50.6821628Z #4 [app internal] load metadata for docker.io/library/node:24-alpine
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:50.6823276Z #4 DONE 0.8s
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:50.8007436Z 
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:50.8008477Z #8 [couchdb internal] load .dockerignore
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:50.8009247Z #8 transferring context: 77B done
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:50.8009953Z #8 DONE 0.0s
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:50.8010195Z 
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:50.8010467Z #9 [app internal] load build context
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:50.8011095Z #9 transferring context: 98.93kB done
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:50.8011571Z #9 DONE 0.0s
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:50.8011797Z 
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:50.8012263Z #7 [couchdb internal] load metadata for docker.io/library/couchdb:3.5.0
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:50.8013117Z #7 DONE 0.9s
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:50.8013371Z 
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:50.8013709Z #10 [couchdb internal] load build context
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:50.8014418Z #10 transferring context: 65B done
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:50.8014793Z #10 DONE 0.0s
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:50.8014959Z 
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:50.8015721Z #11 [couchdb 1/2] FROM docker.io/library/couchdb:3.5.0@sha256:1c0a30a54535377bc9ae23f42efb1ca4e92abe796f78ec98b768ac1d5874cc1b
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:50.8017360Z #11 resolve docker.io/library/couchdb:3.5.0@sha256:1c0a30a54535377bc9ae23f42efb1ca4e92abe796f78ec98b768ac1d5874cc1b done
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:50.9025471Z #11 sha256:d79cbaa90bb2c5a628b4b3f44026d0eb3970f6cb2b0ec893df86cdb9c68ed7b1 6.10kB / 6.10kB done
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:50.9026991Z #11 sha256:4da3945c7a7b798530fa2d8d1a688669e2844499795e39756dfafcfb57ee4937 3.05kB / 3.05kB done
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:50.9027846Z #11 sha256:1c0a30a54535377bc9ae23f42efb1ca4e92abe796f78ec98b768ac1d5874cc1b 3.88kB / 3.88kB done
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:51.0091231Z #11 sha256:1adabd6b0d6b8acfa4ad149a984df0977135a7babf423538c7284a02744a4ee8 0B / 28.23MB 0.2s
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:51.0092252Z #11 sha256:52a88ce690c27e46c06ca70bc34855caa33c6fdeb88e0d351d38ee765cec1064 0B / 1.18kB 0.2s
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:51.1307085Z #11 sha256:1adabd6b0d6b8acfa4ad149a984df0977135a7babf423538c7284a02744a4ee8 11.53MB / 28.23MB 0.3s
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:51.1308477Z #11 extracting sha256:1adabd6b0d6b8acfa4ad149a984df0977135a7babf423538c7284a02744a4ee8
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:51.2316113Z #11 sha256:1adabd6b0d6b8acfa4ad149a984df0977135a7babf423538c7284a02744a4ee8 28.23MB / 28.23MB 0.4s done
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:51.2321291Z #11 sha256:52a88ce690c27e46c06ca70bc34855caa33c6fdeb88e0d351d38ee765cec1064 1.18kB / 1.18kB 0.4s done
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:51.2323875Z #11 sha256:5956f411eb081fd5e98805a4e179ed6ce37e970dae9f90073f44e3a29846e56c 0B / 7.88MB 0.4s
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:51.2328043Z #11 sha256:5a5f0f53a68ee7accfc9a289ee082f475456a30da48c436d7e492e6a51784c02 0B / 401.73kB 0.4s
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:51.3442719Z #11 sha256:5956f411eb081fd5e98805a4e179ed6ce37e970dae9f90073f44e3a29846e56c 3.15MB / 7.88MB 0.5s
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:51.3447520Z #11 sha256:5a5f0f53a68ee7accfc9a289ee082f475456a30da48c436d7e492e6a51784c02 401.73kB / 401.73kB 0.4s done
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:51.3458559Z #11 sha256:5d1c4301450a190841997ce4d608e8f4fa905c5e05265d6a9dc675a8558b506f 0B / 76.50kB 0.5s
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:51.3461367Z #11 sha256:c3d028dd9228411efb7d9509493db9441a8c58f4d2da186c2c056fea0f473b50 0B / 274B 0.5s
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:51.4523609Z #11 sha256:5956f411eb081fd5e98805a4e179ed6ce37e970dae9f90073f44e3a29846e56c 7.88MB / 7.88MB 0.6s done
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:51.4528093Z #11 sha256:5d1c4301450a190841997ce4d608e8f4fa905c5e05265d6a9dc675a8558b506f 76.50kB / 76.50kB 0.5s done
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:51.4530672Z #11 sha256:c3d028dd9228411efb7d9509493db9441a8c58f4d2da186c2c056fea0f473b50 274B / 274B 0.5s done
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:51.4532170Z #11 sha256:a6f30cc7cb486810eba01b0abc11b1be9fa571ec4e88001cef23606995b09289 1.25kB / 1.25kB 0.6s done
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:51.4533609Z #11 sha256:65742eda7201276852ec57066565a654f71143c69868528f2b7b00d6ab89ee98 54.53MB / 103.24MB 0.7s
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:51.4535035Z #11 sha256:768af929a959d8a2bd13618b8bf4110c9cc0f349972095a5b1eca6244ef4d5fa 379B / 379B 0.6s done
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:51.4537861Z #11 sha256:3c728f23e61ab2d3bccb874ac52a32ab78993f7bfff38773f22fa8890baa7fde 2.23kB / 2.23kB 0.7s done
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:51.4541640Z #11 sha256:d21eae8ecc488e1f57057e71d3d85b11a74f7d6ad9edb904b7d0663b1e2128a7 0B / 122B 0.7s
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:51.5550543Z #11 sha256:65742eda7201276852ec57066565a654f71143c69868528f2b7b00d6ab89ee98 103.24MB / 103.24MB 0.8s
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:51.5552774Z #11 sha256:d21eae8ecc488e1f57057e71d3d85b11a74f7d6ad9edb904b7d0663b1e2128a7 122B / 122B 0.7s done
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:51.6551367Z #11 sha256:65742eda7201276852ec57066565a654f71143c69868528f2b7b00d6ab89ee98 103.24MB / 103.24MB 0.8s done
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:52.6077355Z #11 extracting sha256:1adabd6b0d6b8acfa4ad149a984df0977135a7babf423538c7284a02744a4ee8 1.4s done
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:52.6078493Z #11 extracting sha256:52a88ce690c27e46c06ca70bc34855caa33c6fdeb88e0d351d38ee765cec1064 done
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:53.2316534Z #11 extracting sha256:5956f411eb081fd5e98805a4e179ed6ce37e970dae9f90073f44e3a29846e56c
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:53.3322378Z #11 ...
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:53.3322972Z 
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:53.3324123Z #12 [app build 1/6] FROM docker.io/library/node:24-alpine@sha256:116b800c3754b440ee0aa3ed2f20f5bf3d99a554bfd9adeea09ea8017f6e85f5
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:53.3325863Z #12 resolve docker.io/library/node:24-alpine@sha256:116b800c3754b440ee0aa3ed2f20f5bf3d99a554bfd9adeea09ea8017f6e85f5 done
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:53.3327361Z #12 extracting sha256:881fc932939efef04ca120ad44bbd2c0917851eb247aa4995428afb1e80ede17 0.1s done
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:53.3328792Z #12 sha256:881fc932939efef04ca120ad44bbd2c0917851eb247aa4995428afb1e80ede17 3.85MB / 3.85MB 0.1s done
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:53.3331716Z #12 sha256:86781d25d3989ead8f09c45716da0159c1dd0be2c753a51f15b6c60f4b9a97db 57.42MB / 57.42MB 0.4s done
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:53.3333584Z #12 sha256:7eb569707982863466c2b0bcfddda86fb4842fccfaec088d1354f6a29e2856bb 1.26MB / 1.26MB 0.2s done
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:53.3335049Z #12 sha256:7bb632bc9bd793a348866a7dd7920cf89dfc87205c6d38cda182ea6d8065b8e5 442B / 442B 0.2s done
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:53.3336457Z #12 sha256:116b800c3754b440ee0aa3ed2f20f5bf3d99a554bfd9adeea09ea8017f6e85f5 3.87kB / 3.87kB done
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:53.3337857Z #12 sha256:d8d97e479cdc64f052f81f129362168717c59783ade8dcc1abd22e1cca8dbd7c 1.72kB / 1.72kB done
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:53.3339210Z #12 sha256:b791832e17c3a8a5897bdb5087381ffbc07b77bc634d204bf603b5f63c1ffe57 6.68kB / 6.68kB done
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:53.3340971Z #12 extracting sha256:86781d25d3989ead8f09c45716da0159c1dd0be2c753a51f15b6c60f4b9a97db 1.8s done
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:53.3342355Z #12 extracting sha256:7eb569707982863466c2b0bcfddda86fb4842fccfaec088d1354f6a29e2856bb 0.0s done
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:53.3344314Z #12 extracting sha256:7bb632bc9bd793a348866a7dd7920cf89dfc87205c6d38cda182ea6d8065b8e5 done
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:53.3345137Z #12 DONE 2.6s
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:53.3345336Z 
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:53.3346315Z #13 [app build 2/6] WORKDIR /app
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:53.3375092Z #13 DONE 0.0s
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:53.3375336Z 
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:53.3376302Z #11 [couchdb 1/2] FROM docker.io/library/couchdb:3.5.0@sha256:1c0a30a54535377bc9ae23f42efb1ca4e92abe796f78ec98b768ac1d5874cc1b
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:53.4401023Z #11 ...
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:53.4401266Z 
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:53.4401510Z #14 [app build 3/6] COPY package*.json ./
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:53.4402884Z #14 DONE 0.0s
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:53.4403057Z 
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:53.4403756Z #11 [couchdb 1/2] FROM docker.io/library/couchdb:3.5.0@sha256:1c0a30a54535377bc9ae23f42efb1ca4e92abe796f78ec98b768ac1d5874cc1b
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:53.6778427Z #11 extracting sha256:5956f411eb081fd5e98805a4e179ed6ce37e970dae9f90073f44e3a29846e56c 0.4s done
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:53.6780537Z #11 extracting sha256:5a5f0f53a68ee7accfc9a289ee082f475456a30da48c436d7e492e6a51784c02
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:53.7831633Z #11 extracting sha256:5a5f0f53a68ee7accfc9a289ee082f475456a30da48c436d7e492e6a51784c02 0.0s done
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:53.7833532Z #11 extracting sha256:5d1c4301450a190841997ce4d608e8f4fa905c5e05265d6a9dc675a8558b506f done
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:53.7835104Z #11 extracting sha256:c3d028dd9228411efb7d9509493db9441a8c58f4d2da186c2c056fea0f473b50 done
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:53.7836971Z #11 extracting sha256:65742eda7201276852ec57066565a654f71143c69868528f2b7b00d6ab89ee98
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:56.1764524Z #11 extracting sha256:65742eda7201276852ec57066565a654f71143c69868528f2b7b00d6ab89ee98 2.3s done
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:56.1767401Z #11 extracting sha256:768af929a959d8a2bd13618b8bf4110c9cc0f349972095a5b1eca6244ef4d5fa
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:56.3421244Z #11 extracting sha256:768af929a959d8a2bd13618b8bf4110c9cc0f349972095a5b1eca6244ef4d5fa 0.0s done
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:56.5912505Z #11 extracting sha256:a6f30cc7cb486810eba01b0abc11b1be9fa571ec4e88001cef23606995b09289
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:56.6971874Z #11 extracting sha256:a6f30cc7cb486810eba01b0abc11b1be9fa571ec4e88001cef23606995b09289 done
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:56.6975052Z #11 extracting sha256:3c728f23e61ab2d3bccb874ac52a32ab78993f7bfff38773f22fa8890baa7fde done
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:56.6977010Z #11 extracting sha256:d21eae8ecc488e1f57057e71d3d85b11a74f7d6ad9edb904b7d0663b1e2128a7 done
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:56.6977965Z #11 DONE 5.9s
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:56.6978293Z 
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:56.6979157Z #15 [couchdb 2/2] COPY --chown=couchdb:couchdb couchdb.ini /opt/couchdb/etc/local.d/single-node.ini
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:56.6980310Z #15 DONE 0.0s
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:56.6981186Z 
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:56.6981750Z #16 [app stage-1 4/6] RUN npm ci --omit=dev && npm cache clean --force
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.1783994Z #16 ...
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.1784763Z 
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.1785506Z #17 [couchdb] exporting to image
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.1786575Z #17 exporting layers 0.3s done
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.1787828Z #17 writing image sha256:2a7e9a68a13c8b9546c4b662149edfaf5ab12933ccc81896b7852c7fcdd7ee03 done
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.1789071Z #17 naming to docker.io/library/techinventory-couchdb done
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.1790495Z #17 DONE 0.3s
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.1790728Z 
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.1791114Z #18 [couchdb] resolving provenance for metadata file
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.1791695Z #18 DONE 0.0s
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.2009301Z 
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.2037475Z #16 [app stage-1 4/6] RUN npm ci --omit=dev && npm cache clean --force
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.2060388Z #16 3.856 
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.2079795Z #16 3.856 added 74 packages, and audited 75 packages in 4s
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.2081127Z #16 3.857 
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.3558662Z #16 3.857 33 packages are looking for funding
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.3560362Z #16 3.857   run `npm fund` for details
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.3561689Z #16 3.858 
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.3562835Z #16 3.858 found 0 vulnerabilities
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.3564280Z #16 3.861 npm notice
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.3565672Z #16 3.861 npm notice New major version of npm available! 11.19.1 -> 12.2.2
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.3567566Z #16 3.861 npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.3568950Z #16 3.861 npm notice To update run: npm install -g npm@12.2.2
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.3570174Z #16 3.861 npm notice
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.4475627Z #16 ...
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.4500258Z 
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.4516738Z #19 [app build 4/6] RUN npm ci
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.4528718Z #19 4.002 
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.4537998Z #19 4.002 added 108 packages, and audited 109 packages in 4s
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.4538815Z #19 4.002 
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.4540069Z #19 4.002 42 packages are looking for funding
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.4541070Z #19 4.003   run `npm fund` for details
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.4541796Z #19 4.004 
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.4542471Z #19 4.004 found 0 vulnerabilities
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.4543733Z #19 4.005 npm warn install-scripts 1 package has install scripts not yet covered by allowScripts:
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.4545176Z #19 4.005 npm warn install-scripts   esbuild@0.28.2 (postinstall: node install.js)
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.4546383Z #19 4.005 npm warn install-scripts
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.4547806Z #19 4.005 npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.4550877Z #19 4.007 npm notice
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.4551942Z #19 4.007 npm notice New major version of npm available! 11.19.1 -> 12.2.2
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.4553333Z #19 4.007 npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.4554644Z #19 4.007 npm notice To update run: npm install -g npm@12.2.2
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.4555634Z #19 4.007 npm notice
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.4556383Z #19 DONE 4.1s
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.4556745Z 
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.4557460Z #16 [app stage-1 4/6] RUN npm ci --omit=dev && npm cache clean --force
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.4558673Z #16 4.097 npm warn using --force Recommended protections disabled.
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.6441163Z #16 ...
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.6441770Z 
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.6442296Z #20 [app build 5/6] COPY client ./client
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.6443176Z #20 DONE 0.0s
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.7944047Z 
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.7945090Z #21 [app build 6/6] RUN npm run build
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.8577713Z #21 ...
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.8578355Z 
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.8579083Z #16 [app stage-1 4/6] RUN npm ci --omit=dev && npm cache clean --force
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:57.8580328Z #16 DONE 4.5s
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:58.0493567Z 
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:58.0494763Z #22 [app stage-1 5/6] COPY server ./server
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:58.0495645Z #22 DONE 0.0s
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:58.0496090Z 
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:58.0496548Z #21 [app build 6/6] RUN npm run build
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:58.0497212Z #21 0.405 
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:58.0497819Z #21 0.405 > techinventory@1.0.0 build
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:58.0498681Z #21 0.405 > vite build --config client/vite.config.js
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:58.0499771Z #21 0.405 
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:58.1769580Z #21 0.683 vite v7.3.8 building client environment for production...
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:58.4248613Z #21 0.781 transforming...
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:59.4359838Z #21 1.942 ✓ 23 modules transformed.
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:59.6086926Z #21 2.115 rendering chunks...
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:59.7099565Z #21 2.129 computing gzip size...
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:59.7101202Z #21 2.141 ../dist/index.html                   0.38 kB │ gzip:  0.28 kB
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:59.7102259Z #21 2.141 ../dist/assets/index-BZpkwoxN.css    4.37 kB │ gzip:  1.53 kB
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:59.7103267Z #21 2.141 ../dist/assets/index-DQsQ4Kn1.js   230.12 kB │ gzip: 71.82 kB
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:59.7103954Z #21 2.142 ✓ built in 1.42s
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:59.7104340Z #21 DONE 2.2s
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:59.9304028Z 
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:59.9320962Z #23 [app stage-1 6/6] COPY --from=build /app/dist ./dist
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:59.9340276Z #23 DONE 0.0s
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:59.9360115Z 
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:43:59.9380366Z #24 [app] exporting to image
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:44:00.4291874Z #24 exporting layers 0.6s done
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:44:00.4558978Z #24 writing image sha256:dbb636bee19b1e331f70ea7d49c98d3d8f747860dd279828f1fd174a2e759b4c done
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:44:00.4560529Z  couchdb  Built
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:44:00.4561700Z #24 naming to docker.io/library/techinventory-app done
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:44:00.4562261Z #24 DONE 0.7s
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:44:00.4562492Z 
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:44:00.4562801Z #25 [app] resolving provenance for metadata file
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:44:00.4563301Z #25 DONE 0.0s
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:44:00.4564276Z  app  Built
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:44:00.4633068Z  Network techinventory_default  Creating
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:44:00.5092304Z  Network techinventory_default  Created
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:44:00.5291291Z  Volume "techinventory_couchdata"  Creating
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:44:00.5306812Z  Volume "techinventory_couchdata"  Created
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:44:00.5313275Z  Container techinventory-couchdb-1  Creating
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:44:00.5546555Z  Container techinventory-couchdb-1  Created
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:44:00.5560854Z  Container techinventory-app-1  Creating
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:44:00.5650666Z  Container techinventory-app-1  Created
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:44:00.5662262Z  Container techinventory-couchdb-1  Starting
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:44:00.7478216Z  Container techinventory-couchdb-1  Started
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:44:00.7479099Z  Container techinventory-couchdb-1  Waiting
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:44:06.2499772Z  Container techinventory-couchdb-1  Healthy
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:44:06.2500784Z  Container techinventory-app-1  Starting
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:44:06.4017218Z  Container techinventory-app-1  Started
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:44:06.4018052Z  Container techinventory-app-1  Waiting
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:44:06.4018843Z  Container techinventory-couchdb-1  Waiting
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:44:06.9035205Z  Container techinventory-app-1  Healthy
+verify	Run docker compose up -d --build --wait --wait-timeout 180	2026-11-12T22:44:06.9042771Z  Container techinventory-couchdb-1  Healthy
+verify	Run npm run test:integration	﻿2026-11-12T22:44:06.9169085Z ##[group]Run npm run test:integration
+verify	Run npm run test:integration	2026-11-12T22:44:06.9169955Z ^[[36;1mnpm run test:integration^[[0m
+verify	Run npm run test:integration	2026-11-12T22:44:06.9201910Z shell: /usr/bin/bash -e {0}
+verify	Run npm run test:integration	2026-11-12T22:44:06.9202382Z ##[endgroup]
+verify	Run npm run test:integration	2026-11-12T22:44:07.0500547Z 
+verify	Run npm run test:integration	2026-11-12T22:44:07.0525710Z > techinventory@1.0.0 test:integration
+verify	Run npm run test:integration	2026-11-12T22:44:07.0526779Z > node --env-file=.env --test tests/integration.js
+verify	Run npm run test:integration	2026-11-12T22:44:07.0527414Z 
+verify	Run npm run test:integration	2026-11-12T22:44:07.3706285Z ✔ real CouchDB API lifecycle and persistence read (224.641914ms)
+verify	Run npm run test:integration	2026-11-12T22:44:07.3856140Z ℹ tests 1
+verify	Run npm run test:integration	2026-11-12T22:44:07.3856687Z ℹ suites 0
+verify	Run npm run test:integration	2026-11-12T22:44:07.3857153Z ℹ pass 1
+verify	Run npm run test:integration	2026-11-12T22:44:07.3857588Z ℹ fail 0
+verify	Run npm run test:integration	2026-11-12T22:44:07.3857996Z ℹ cancelled 0
+verify	Run npm run test:integration	2026-11-12T22:44:07.3858435Z ℹ skipped 0
+verify	Run npm run test:integration	2026-11-12T22:44:07.3858873Z ℹ todo 0
+verify	Run npm run test:integration	2026-11-12T22:44:07.3859631Z ℹ duration_ms 294.953325
+verify	Run docker compose logs --no-color	﻿2026-11-12T22:44:07.4030986Z ##[group]Run docker compose logs --no-color
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.4031557Z ^[[36;1mdocker compose logs --no-color^[[0m
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.4031868Z ^[[36;1mdocker compose ps -a^[[0m
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.4032271Z ^[[36;1mdocker inspect $(docker compose ps -aq couchdb) --format '{{json .State}}'^[[0m
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.4053438Z shell: /usr/bin/bash -e {0}
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.4053703Z ##[endgroup]
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.4962257Z app-1      | TechInventory ready
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.4964751Z couchdb-1  | [info] 2026-11-12T22:44:01.328953Z nonode@nohost <0.236.0> -------- Preflight check: Checking For Monsters
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.4965711Z couchdb-1  | 
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.4966583Z couchdb-1  | [info] 2026-11-12T22:44:01.330392Z nonode@nohost <0.236.0> -------- Preflight check: Asserting Admin Account
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.4967892Z couchdb-1  | 
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.4968800Z couchdb-1  | [info] 2026-11-12T22:44:01.332728Z nonode@nohost <0.236.0> -------- Apache CouchDB 3.5.0 is starting.
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.4969953Z couchdb-1  | 
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.4970899Z couchdb-1  | [info] 2026-11-12T22:44:01.332767Z nonode@nohost <0.237.0> -------- Starting couch_sup
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.4972318Z couchdb-1  | [info] 2026-11-12T22:44:01.375443Z nonode@nohost <0.236.0> -------- Apache CouchDB has started. Time to relax.
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.4973196Z couchdb-1  | 
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.4974126Z couchdb-1  | [notice] 2026-11-12T22:44:01.380454Z nonode@nohost <0.293.0> -------- rexi_server : started servers
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.4974994Z couchdb-1  | [notice] 2026-11-12T22:44:01.381514Z nonode@nohost <0.297.0> -------- rexi_buffer : started servers
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.4975847Z couchdb-1  | [warning] 2026-11-12T22:44:01.399371Z nonode@nohost <0.305.0> -------- creating missing database: _nodes
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.4976759Z couchdb-1  | [info] 2026-11-12T22:44:01.399418Z nonode@nohost <0.306.0> -------- open_result error {not_found,no_db_file} for _nodes
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.4977630Z couchdb-1  | [warning] 2026-11-12T22:44:01.429705Z nonode@nohost <0.325.0> -------- creating missing database: _dbs
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.4978460Z couchdb-1  | [warning] 2026-11-12T22:44:01.429744Z nonode@nohost <0.324.0> -------- creating missing database: _dbs
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.4979593Z couchdb-1  | [info] 2026-11-12T22:44:01.429769Z nonode@nohost <0.326.0> -------- open_result error {not_found,no_db_file} for _dbs
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.4980644Z couchdb-1  | [notice] 2026-11-12T22:44:01.435547Z nonode@nohost <0.339.0> -------- mem3_reshard_dbdoc start init()
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.4981445Z couchdb-1  | [notice] 2026-11-12T22:44:01.438140Z nonode@nohost <0.341.0> -------- mem3_reshard start init()
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.4982287Z couchdb-1  | [notice] 2026-11-12T22:44:01.438190Z nonode@nohost <0.342.0> -------- mem3_reshard db monitor <0.342.0> starting
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.4983149Z couchdb-1  | [notice] 2026-11-12T22:44:01.440649Z nonode@nohost <0.341.0> -------- mem3_reshard starting reloading jobs
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.4983990Z couchdb-1  | [notice] 2026-11-12T22:44:01.440741Z nonode@nohost <0.341.0> -------- mem3_reshard finished reloading jobs
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.4984845Z couchdb-1  | [info] 2026-11-12T22:44:01.459540Z nonode@nohost <0.348.0> -------- Apache CouchDB has started. Time to relax.
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.4985347Z couchdb-1  | 
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.4985969Z couchdb-1  | [info] 2026-11-12T22:44:01.459667Z nonode@nohost <0.348.0> -------- Apache CouchDB has started on http://any:5984/
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.4987242Z couchdb-1  | [notice] 2026-11-12T22:44:01.464021Z nonode@nohost <0.388.0> -------- chttpd_auth_cache changes listener died because the _users database does not exist. Create the database to silence this notice.
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.4988411Z couchdb-1  | [error] 2026-11-12T22:44:01.464388Z nonode@nohost emulator -------- Error in process <0.389.0> with exit value:
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.5003345Z couchdb-1  | {database_does_not_exist,[{mem3_shards,load_shards_from_db,[<<"_users">>],[{file,"src/mem3_shards.erl"},{line,445}]},{mem3_shards,load_shards_from_disk,1,[{file,"src/mem3_shards.erl"},{line,420}]},{mem3_shards,load_shards_from_disk,2,[{file,"src/mem3_shards.erl"},{line,449}]},{mem3_shards,for_docid,3,[{file,"src/mem3_shards.erl"},{line,100}]},{fabric_doc_open,go,3,[{file,"src/fabric_doc_open.erl"},{line,38}]},{chttpd_auth_cache,ensure_auth_ddoc_exists,2,[{file,"src/chttpd_auth_cache.erl"},{line,210}]},{chttpd_auth_cache,listen_for_changes,1,[{file,"src/chttpd_auth_cache.erl"},{line,156}]}]}
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.5007121Z couchdb-1  | 
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.5008124Z couchdb-1  | [error] 2026-11-12T22:44:01.464569Z nonode@nohost emulator -------- Error in process <0.389.0> with exit value:
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.5013003Z couchdb-1  | {database_does_not_exist,[{mem3_shards,load_shards_from_db,[<<"_users">>],[{file,"src/mem3_shards.erl"},{line,445}]},{mem3_shards,load_shards_from_disk,1,[{file,"src/mem3_shards.erl"},{line,420}]},{mem3_shards,load_shards_from_disk,2,[{file,"src/mem3_shards.erl"},{line,449}]},{mem3_shards,for_docid,3,[{file,"src/mem3_shards.erl"},{line,100}]},{fabric_doc_open,go,3,[{file,"src/fabric_doc_open.erl"},{line,38}]},{chttpd_auth_cache,ensure_auth_ddoc_exists,2,[{file,"src/chttpd_auth_cache.erl"},{line,210}]},{chttpd_auth_cache,listen_for_changes,1,[{file,"src/chttpd_auth_cache.erl"},{line,156}]}]}
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.5016665Z couchdb-1  | 
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.5017582Z couchdb-1  | [notice] 2026-11-12T22:44:01.486238Z nonode@nohost <0.429.0> -------- Missing system database _users
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.5019532Z couchdb-1  | [notice] 2026-11-12T22:44:01.514494Z nonode@nohost <0.118.0> -------- config: [couchdb] uuid set to bd948caa14c0a52c1d4e21b8d8d1e77e for reason nil
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.5021314Z couchdb-1  | [error] 2026-11-12T22:44:01.519920Z nonode@nohost <0.485.0> -------- Request to create N=3 DB but only 1 node(s)
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.5022889Z couchdb-1  | [error] 2026-11-12T22:44:01.536807Z nonode@nohost <0.485.0> -------- Request to create N=3 DB but only 1 node(s)
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.5024575Z couchdb-1  | [notice] 2026-11-12T22:44:01.615043Z nonode@nohost <0.118.0> -------- config: [admins] inventory_service set to '****' for reason nil
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.5026311Z couchdb-1  | [notice] 2026-11-12T22:44:05.804960Z nonode@nohost <0.585.0> 8709f3090e localhost:5984 127.0.0.1 undefined GET /_up 200 ok 12
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.5028144Z couchdb-1  | [notice] 2026-11-12T22:44:06.481820Z nonode@nohost <0.414.0> -------- Started replicator db changes listener <0.641.0>
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.5029780Z couchdb-1  | [error] 2026-11-12T22:44:06.883055Z nonode@nohost <0.586.0> 7f38f92058 Request to create N=3 DB but only 1 node(s)
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.5030992Z couchdb-1  | [notice] 2026-11-12T22:44:06.887779Z nonode@nohost <0.586.0> 7f38f92058 couchdb:5984 172.18.0.3 inventory_service PUT /techinventory 201 ok 198
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.5032152Z couchdb-1  | [notice] 2026-11-12T22:44:06.913731Z nonode@nohost <0.587.0> c16fc32301 couchdb:5984 172.18.0.3 inventory_service PUT /techinventory/_security 200 ok 5
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.5033322Z couchdb-1  | [notice] 2026-11-12T22:44:06.919471Z nonode@nohost <0.586.0> 69115f9c99 couchdb:5984 172.18.0.3 inventory_service GET /techinventory/user%3Aadmin 404 ok 2
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.5034515Z couchdb-1  | [notice] 2026-11-12T22:44:07.002075Z nonode@nohost <0.587.0> 0de551b56c couchdb:5984 172.18.0.3 inventory_service PUT /techinventory/user%3Aadmin 201 ok 11
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.5035712Z couchdb-1  | [notice] 2026-11-12T22:44:07.006189Z nonode@nohost <0.586.0> 88d6bed083 couchdb:5984 172.18.0.3 inventory_service GET /techinventory/user%3Aconsulta 404 ok 1
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.5036906Z couchdb-1  | [notice] 2026-11-12T22:44:07.059021Z nonode@nohost <0.587.0> 00a129c7ef couchdb:5984 172.18.0.3 inventory_service PUT /techinventory/user%3Aconsulta 201 ok 3
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.5037990Z couchdb-1  | [notice] 2026-11-12T22:44:07.200739Z nonode@nohost <0.586.0> 43e38e91fa couchdb:5984 172.18.0.3 inventory_service GET / 200 ok 5
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.5039085Z couchdb-1  | [notice] 2026-11-12T22:44:07.236225Z nonode@nohost <0.586.0> 8bce632464 couchdb:5984 172.18.0.3 inventory_service GET /techinventory/user%3Aadmin 200 ok 2
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.5040864Z couchdb-1  | [notice] 2026-11-12T22:44:07.321429Z nonode@nohost <0.586.0> 7323ddca45 couchdb:5984 172.18.0.3 inventory_service PUT /techinventory/asset%3ATEST-12810447 201 ok 3
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.5042150Z couchdb-1  | [notice] 2026-11-12T22:44:07.330162Z nonode@nohost <0.586.0> ea767a2f1a couchdb:5984 172.18.0.3 inventory_service GET /techinventory/asset%3ATEST-12810447 200 ok 1
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.5043420Z couchdb-1  | [notice] 2026-11-12T22:44:07.334282Z nonode@nohost <0.587.0> 76c90b69d9 couchdb:5984 172.18.0.3 inventory_service PUT /techinventory/asset%3ATEST-12810447 201 ok 2
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.5044675Z couchdb-1  | [notice] 2026-11-12T22:44:07.340652Z nonode@nohost <0.586.0> a974b1080c couchdb:5984 172.18.0.3 inventory_service GET /techinventory/asset%3ATEST-12810447 200 ok 1
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.5046749Z couchdb-1  | [notice] 2026-11-12T22:44:07.343665Z nonode@nohost <0.587.0> 52f35e3641 couchdb:5984 172.18.0.3 inventory_service PUT /techinventory/asset%3ATEST-12810447 409 ok 2
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.5048651Z couchdb-1  | [notice] 2026-11-12T22:44:07.352113Z nonode@nohost <0.586.0> c8a43732c8 couchdb:5984 172.18.0.3 inventory_service GET /techinventory/_all_docs?include_docs=true 200 ok 4
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.5050248Z couchdb-1  | [notice] 2026-11-12T22:44:07.357693Z nonode@nohost <0.586.0> e8c7363dd1 couchdb:5984 172.18.0.3 inventory_service GET /techinventory/asset%3ATEST-12810447 200 ok 1
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.5051714Z couchdb-1  | [notice] 2026-11-12T22:44:07.361706Z nonode@nohost <0.587.0> d4e80ecc2e couchdb:5984 172.18.0.3 inventory_service DELETE /techinventory/asset%3ATEST-12810447?rev=2-51aa2cfa9169c1d2926ba9da65c30262 200 ok 3
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.5900473Z NAME                      IMAGE                   COMMAND                  SERVICE   CREATED         STATUS                   PORTS
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.5901995Z techinventory-app-1       techinventory-app       "docker-entrypoint.s…"   app       7 seconds ago   Up 1 second              127.0.0.1:3000->3000/tcp
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.5903343Z techinventory-couchdb-1   techinventory-couchdb   "tini -- /docker-ent…"   couchdb   7 seconds ago   Up 7 seconds (healthy)   4369/tcp, 5984/tcp, 9100/tcp
+verify	Run docker compose logs --no-color	2026-11-12T22:44:07.7210565Z {"Status":"running","Running":true,"Paused":false,"Restarting":false,"OOMKilled":false,"Dead":false,"Pid":2966,"ExitCode":0,"Error":"","StartedAt":"2026-11-12T22:44:00.57468413Z","FinishedAt":"0001-01-01T00:00:00Z","Health":{"Status":"healthy","FailingStreak":0,"Log":[{"Start":"2026-11-12T22:44:05.747694461Z","End":"2026-11-12T22:44:05.80664957Z","ExitCode":0,"Output":"{\"seeds\":{},\"status\":\"ok\"}\n"}]}}
+verify	Run docker compose down	﻿2026-11-12T22:44:07.7268621Z ##[group]Run docker compose down
+verify	Run docker compose down	2026-11-12T22:44:07.7268973Z ^[[36;1mdocker compose down^[[0m
+verify	Run docker compose down	2026-11-12T22:44:07.7289235Z shell: /usr/bin/bash -e {0}
+verify	Run docker compose down	2026-11-12T22:44:07.7289765Z ##[endgroup]
+verify	Run docker compose down	2026-11-12T22:44:07.8204049Z  Container techinventory-app-1  Stopping
+verify	Run docker compose down	2026-11-12T22:44:17.9459550Z  Container techinventory-app-1  Stopped
+verify	Run docker compose down	2026-11-12T22:44:17.9460325Z  Container techinventory-app-1  Removing
+verify	Run docker compose down	2026-11-12T22:44:17.9532432Z  Container techinventory-app-1  Removed
+verify	Run docker compose down	2026-11-12T22:44:17.9533174Z  Container techinventory-couchdb-1  Stopping
+verify	Run docker compose down	2026-11-12T22:44:19.0682429Z  Container techinventory-couchdb-1  Stopped
+verify	Run docker compose down	2026-11-12T22:44:19.0683677Z  Container techinventory-couchdb-1  Removing
+verify	Run docker compose down	2026-11-12T22:44:19.0748153Z  Container techinventory-couchdb-1  Removed
+verify	Run docker compose down	2026-11-12T22:44:19.0755911Z  Network techinventory_default  Removing
+verify	Run docker compose down	2026-11-12T22:44:19.1580321Z  Network techinventory_default  Removed
+verify	Post Run actions/setup-node@v4	﻿2026-11-12T22:44:19.1747156Z Post job cleanup.
+verify	Post Run actions/setup-node@v4	2026-11-12T22:44:19.3115490Z (node:3510) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+verify	Post Run actions/setup-node@v4	2026-11-12T22:44:19.3117693Z (Use `node --trace-deprecation ...` to show where the warning was created)
+verify	Post Run actions/setup-node@v4	2026-11-12T22:44:19.3397741Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/TechInventory/TechInventory --files-from manifest.txt --use-compress-program zstdmt
+verify	Post Run actions/setup-node@v4	2026-11-12T22:44:19.6608109Z (node:3510) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+verify	Post Run actions/setup-node@v4	2026-11-12T22:44:20.6500179Z Sent 11117016 of 11117016 (100.0%), 10.6 MBs/sec
+verify	Post Run actions/setup-node@v4	2026-11-12T22:44:20.9608868Z Cache saved with the key: node-cache-Linux-x64-npm-e8f0e016e853525dbeaa1fa4e0c22b9cb703bc55596bab2bb085f9dbff319351
+verify	Post Run actions/checkout@v4	﻿2026-11-12T22:44:20.9803003Z Post job cleanup.
+verify	Post Run actions/checkout@v4	2026-11-12T22:44:21.0759581Z [command]/usr/bin/git version
+verify	Post Run actions/checkout@v4	2026-11-12T22:44:21.0809901Z git version 2.56.1
+verify	Post Run actions/checkout@v4	2026-11-12T22:44:21.0851415Z Temporarily overriding HOME='/home/runner/work/_temp/3d02fba1-6483-48ee-aa93-c866c0fee450' before making global git config changes
+verify	Post Run actions/checkout@v4	2026-11-12T22:44:21.0853064Z Adding repository directory to the temporary git global config as a safe directory
+verify	Post Run actions/checkout@v4	2026-11-12T22:44:21.0857618Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/TechInventory/TechInventory
+verify	Post Run actions/checkout@v4	2026-11-12T22:44:21.0904954Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+verify	Post Run actions/checkout@v4	2026-11-12T22:44:21.0948983Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+verify	Post Run actions/checkout@v4	2026-11-12T22:44:21.1240831Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+verify	Post Run actions/checkout@v4	2026-11-12T22:44:21.1280239Z http.https://github.com/.extraheader
+verify	Post Run actions/checkout@v4	2026-11-12T22:44:21.1293720Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+verify	Post Run actions/checkout@v4	2026-11-12T22:44:21.1359141Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+verify	Post Run actions/checkout@v4	2026-11-12T22:44:21.1637899Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+verify	Post Run actions/checkout@v4	2026-11-12T22:44:21.1741554Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+verify	Complete job	﻿2026-11-12T22:44:21.2208145Z Cleaning up orphan processes
+verify	Complete job	2026-11-12T22:44:21.2621948Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-node@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

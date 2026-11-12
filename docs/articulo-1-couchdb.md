@@ -40,7 +40,7 @@ Para probar la integración se inicia Docker Compose y se ejecuta `npm run test:
 
 La comprobación de persistencia exige un paso adicional: registrar un equipo, reiniciar los contenedores y volver a consultar el mismo documento. El volumen `couchdata` conserva los archivos. Eliminar ese volumen eliminaría también la evidencia que se intenta comprobar.
 
-El estado observado y las salidas de las pruebas se mantienen en `evidence/` y en GitHub Actions. Este artículo no atribuye éxito a verificaciones que sigan pendientes en esos registros.
+El 12 de noviembre de 2026, la [ejecución CI #3](https://github.com/CodexVex/TechInventory/actions/runs/43322534919) terminó correctamente: seis pruebas de API y una integración con CouchDB real. La evidencia está en `evidence/ci-couchdb-real.txt` y `evidence/03-ci-exitoso.jpg`. La prueba de reinicio se documenta por separado: leer tras escribir no demuestra por sí solo persistencia entre reinicios.
 
 ## Lo que mejoraría al crecer
 
