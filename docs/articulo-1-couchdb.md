@@ -6,6 +6,8 @@ tags: couchdb, node, react, database
 
 # TechInventory: cómo modelar un inventario con documentos y revisiones de Apache CouchDB
 
+Autora: Victoria Lavarello Vidaurre
+
 Cuando se registra un equipo en un laboratorio, no basta con guardar su nombre. También interesa conocer dónde está, quién es responsable y si puede utilizarse. TechInventory organiza esa información mediante una aplicación con React, una API en Express y documentos JSON en Apache CouchDB.
 
 El proyecto tiene un alcance concreto: registrar, consultar, actualizar y eliminar equipos; buscar por sus datos principales; filtrar por estado y mostrar un resumen. La base elegida es CouchDB real. No se reemplaza por una colección en memoria para simplificar el alojamiento.
@@ -56,4 +58,12 @@ CouchDB aporta documentos y control de concurrencia; no resuelve por sí mismo e
 - [Control de conflictos](https://docs.couchdb.org/en/stable/replication/conflicts.html)
 - [Instalación oficial con Docker](https://docs.couchdb.org/en/stable/install/docker.html)
 
-Nota editorial: preparado como artículo original para el integrante que explique el modelo documental. Revisar autoría y añadir los enlaces públicos del despliegue y video cuando existan; no publicar marcadores como si fueran resultados.
+## Resultado verificado de la demostración
+
+El 12/11/2026 se publicó TechInventory con HTTPS en una VM Ubuntu de Azure for Students. El [despliegue automático #4](https://github.com/CodexVex/TechInventory/actions/runs/43323181513) terminó correctamente. También se ejecutó CRUD real desde la URL HTTPS y se comprobó que `asset:LT-DEMO` conservaba su identificador y revisión después de reiniciar Express y CouchDB. Los registros y capturas están en [evidence](https://github.com/CodexVex/TechInventory/tree/main/evidence).
+
+![Inventario real publicado por HTTPS](https://raw.githubusercontent.com/CodexVex/TechInventory/main/evidence/06-inventario-completo.jpg)
+
+![Despliegue automático exitoso](https://raw.githubusercontent.com/CodexVex/TechInventory/main/evidence/04-cd-exitoso.jpg)
+
+La URL utilizada fue `https://techinventory-codexvex-20261112.eastus.cloudapp.azure.com`. El alojamiento es temporal: se retira después de recopilar las evidencias para evitar consumo continuo de créditos. Esa dirección no debe considerarse un servicio permanente. El repositorio y los registros de Actions permiten revisar la construcción y el despliegue aunque el servidor se haya retirado.

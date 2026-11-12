@@ -1,0 +1,266 @@
+ Image techinventory-app Building 
+ Image techinventory-couchdb Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 1.34kB done
+#1 DONE 0.0s
+
+#2 [couchdb internal] load build definition from Dockerfile.couchdb
+#2 transferring dockerfile: 146B done
+#2 DONE 0.0s
+
+#3 [app internal] load build definition from Dockerfile
+#3 transferring dockerfile: 390B done
+#3 DONE 0.0s
+
+#4 [app internal] load metadata for docker.io/library/node:24-alpine
+#4 ...
+
+#5 [auth] library/couchdb:pull token for registry-1.docker.io
+#5 DONE 0.0s
+
+#6 [auth] library/node:pull token for registry-1.docker.io
+#6 DONE 0.0s
+
+#7 [couchdb internal] load metadata for docker.io/library/couchdb:3.5.0
+#7 ...
+
+#4 [app internal] load metadata for docker.io/library/node:24-alpine
+#4 DONE 5.4s
+
+#8 [app internal] load .dockerignore
+#8 transferring context: 77B done
+#8 DONE 0.0s
+
+#9 [app internal] load build context
+#9 transferring context: 98.93kB done
+#9 DONE 0.0s
+
+#10 [app build 1/6] FROM docker.io/library/node:24-alpine@sha256:116b800c3754b440ee0aa3ed2f20f5bf3d99a554bfd9adeea09ea8017f6e85f5
+#10 resolve docker.io/library/node:24-alpine@sha256:116b800c3754b440ee0aa3ed2f20f5bf3d99a554bfd9adeea09ea8017f6e85f5 done
+#10 sha256:99412228dfd5923a0c1f3e338b4e46e42052692e1cd302db569cf260061897bb 0B / 445B 0.2s
+#10 sha256:99412228dfd5923a0c1f3e338b4e46e42052692e1cd302db569cf260061897bb 445B / 445B 0.2s done
+#10 sha256:3722e830560e975eadfac7540e68a2e9cf887dd49b0683e7a2738e88a3887ab4 0B / 1.26MB 0.3s
+#10 sha256:b90627b8f4292fd3cb63f0f27f0b11c37f04ba88ef3b78d4948ea0ace18c85e9 0B / 4.19MB 0.2s
+#10 sha256:5990dbc8d622cb596f58f9515f179915723cd1126e3b5264bfc403a1430e880d 0B / 56.85MB 0.3s
+#10 ...
+
+#8 [couchdb internal] load .dockerignore
+#8 transferring context: 77B done
+#8 DONE 0.0s
+
+#7 [couchdb internal] load metadata for docker.io/library/couchdb:3.5.0
+#7 DONE 5.8s
+
+#11 [couchdb internal] load build context
+#11 transferring context: 65B done
+#11 DONE 0.0s
+
+#10 [app build 1/6] FROM docker.io/library/node:24-alpine@sha256:116b800c3754b440ee0aa3ed2f20f5bf3d99a554bfd9adeea09ea8017f6e85f5
+#10 sha256:3722e830560e975eadfac7540e68a2e9cf887dd49b0683e7a2738e88a3887ab4 1.26MB / 1.26MB 1.0s done
+#10 sha256:b90627b8f4292fd3cb63f0f27f0b11c37f04ba88ef3b78d4948ea0ace18c85e9 1.05MB / 4.19MB 2.6s
+#10 sha256:5990dbc8d622cb596f58f9515f179915723cd1126e3b5264bfc403a1430e880d 2.10MB / 56.85MB 5.4s
+#10 sha256:b90627b8f4292fd3cb63f0f27f0b11c37f04ba88ef3b78d4948ea0ace18c85e9 2.10MB / 4.19MB 5.7s
+#10 sha256:b90627b8f4292fd3cb63f0f27f0b11c37f04ba88ef3b78d4948ea0ace18c85e9 3.15MB / 4.19MB 8.0s
+#10 sha256:b90627b8f4292fd3cb63f0f27f0b11c37f04ba88ef3b78d4948ea0ace18c85e9 4.19MB / 4.19MB 9.8s done
+#10 extracting sha256:b90627b8f4292fd3cb63f0f27f0b11c37f04ba88ef3b78d4948ea0ace18c85e9 0.1s done
+#10 ...
+
+#12 [couchdb 1/2] FROM docker.io/library/couchdb:3.5.0@sha256:1c0a30a54535377bc9ae23f42efb1ca4e92abe796f78ec98b768ac1d5874cc1b
+#12 resolve docker.io/library/couchdb:3.5.0@sha256:1c0a30a54535377bc9ae23f42efb1ca4e92abe796f78ec98b768ac1d5874cc1b done
+#12 sha256:fc16b0843a81ff1e6752b7cef2fecd0e6c43a5a98c79e0cde1c2f7e8122c7040 122B / 122B 0.5s done
+#12 sha256:e163445bdbbd0cb91ea1bfa96909f2b5f169a0bf26b569832ffda6f612a54f7f 2.23kB / 2.23kB 0.5s done
+#12 sha256:72fb8515f062ace5d824a363f1bf456b9976027e3e7b8be680121a6b0f216b54 1.25kB / 1.25kB 0.8s done
+#12 sha256:71fae5517d0b327901407da7a8cdfd38a0a5e726abc77a9614047d1c6b3cb18b 379B / 379B 0.6s done
+#12 sha256:fba0d2862cc0e9d815853a4938943ddc675cbfa53e3b8de8630a198d4b87e4ea 4.19MB / 102.91MB 8.6s
+#12 sha256:96d5fadb657aeb91653ae7581744d489aada5e2cfde18cec09eeff769e671295 274B / 274B 0.5s done
+#12 sha256:f7628965715b1dd7230ab318af69b6eb333fec433811383e95bc73de791fba8f 76.50kB / 76.50kB 0.8s done
+#12 sha256:aeede8e764e8668384716731ec44077ccc8da940f19681cb1260c06b25ce047a 370.49kB / 370.49kB 1.2s done
+#12 sha256:91df9dda2f35c75433b041e11089c5f939b69d1c8a5123883405639db6cdb8ff 1.05MB / 7.69MB 5.9s
+#12 sha256:4bfe87e999e8e91a0d7594e0d29b0a8879ef1ace3ccf1cdb2ad896a754c38688 0B / 1.19kB 0.5s
+#12 sha256:91df9dda2f35c75433b041e11089c5f939b69d1c8a5123883405639db6cdb8ff 2.10MB / 7.69MB 6.0s
+#12 sha256:4bfe87e999e8e91a0d7594e0d29b0a8879ef1ace3ccf1cdb2ad896a754c38688 1.19kB / 1.19kB 0.8s done
+#12 sha256:162e72af9357868b8f7f48fbf3ea23ddd179a309a9f28f2802a2e785239ec09d 0B / 28.10MB 0.2s
+#12 sha256:91df9dda2f35c75433b041e11089c5f939b69d1c8a5123883405639db6cdb8ff 3.15MB / 7.69MB 8.3s
+#12 sha256:162e72af9357868b8f7f48fbf3ea23ddd179a309a9f28f2802a2e785239ec09d 2.10MB / 28.10MB 3.0s
+#12 sha256:91df9dda2f35c75433b041e11089c5f939b69d1c8a5123883405639db6cdb8ff 4.19MB / 7.69MB 10.7s
+#12 sha256:fba0d2862cc0e9d815853a4938943ddc675cbfa53e3b8de8630a198d4b87e4ea 6.29MB / 102.91MB 13.7s
+#12 sha256:91df9dda2f35c75433b041e11089c5f939b69d1c8a5123883405639db6cdb8ff 5.24MB / 7.69MB 12.9s
+#12 sha256:162e72af9357868b8f7f48fbf3ea23ddd179a309a9f28f2802a2e785239ec09d 4.19MB / 28.10MB 7.2s
+#12 sha256:91df9dda2f35c75433b041e11089c5f939b69d1c8a5123883405639db6cdb8ff 6.29MB / 7.69MB 14.7s
+#12 ...
+
+#10 [app build 1/6] FROM docker.io/library/node:24-alpine@sha256:116b800c3754b440ee0aa3ed2f20f5bf3d99a554bfd9adeea09ea8017f6e85f5
+#10 sha256:5990dbc8d622cb596f58f9515f179915723cd1126e3b5264bfc403a1430e880d 8.39MB / 56.85MB 20.3s
+#10 ...
+
+#12 [couchdb 1/2] FROM docker.io/library/couchdb:3.5.0@sha256:1c0a30a54535377bc9ae23f42efb1ca4e92abe796f78ec98b768ac1d5874cc1b
+#12 sha256:fba0d2862cc0e9d815853a4938943ddc675cbfa53e3b8de8630a198d4b87e4ea 9.44MB / 102.91MB 18.8s
+#12 sha256:91df9dda2f35c75433b041e11089c5f939b69d1c8a5123883405639db6cdb8ff 7.34MB / 7.69MB 16.7s
+#12 sha256:91df9dda2f35c75433b041e11089c5f939b69d1c8a5123883405639db6cdb8ff 7.69MB / 7.69MB 17.1s done
+#12 sha256:162e72af9357868b8f7f48fbf3ea23ddd179a309a9f28f2802a2e785239ec09d 6.29MB / 28.10MB 11.7s
+#12 sha256:fba0d2862cc0e9d815853a4938943ddc675cbfa53e3b8de8630a198d4b87e4ea 12.58MB / 102.91MB 23.9s
+#12 sha256:162e72af9357868b8f7f48fbf3ea23ddd179a309a9f28f2802a2e785239ec09d 8.39MB / 28.10MB 15.2s
+#12 sha256:162e72af9357868b8f7f48fbf3ea23ddd179a309a9f28f2802a2e785239ec09d 10.49MB / 28.10MB 18.5s
+#12 ...
+
+#10 [app build 1/6] FROM docker.io/library/node:24-alpine@sha256:116b800c3754b440ee0aa3ed2f20f5bf3d99a554bfd9adeea09ea8017f6e85f5
+#10 sha256:5990dbc8d622cb596f58f9515f179915723cd1126e3b5264bfc403a1430e880d 16.78MB / 56.85MB 30.5s
+#10 ...
+
+#12 [couchdb 1/2] FROM docker.io/library/couchdb:3.5.0@sha256:1c0a30a54535377bc9ae23f42efb1ca4e92abe796f78ec98b768ac1d5874cc1b
+#12 sha256:fba0d2862cc0e9d815853a4938943ddc675cbfa53e3b8de8630a198d4b87e4ea 16.78MB / 102.91MB 29.0s
+#12 sha256:162e72af9357868b8f7f48fbf3ea23ddd179a309a9f28f2802a2e785239ec09d 12.58MB / 28.10MB 22.4s
+#12 sha256:162e72af9357868b8f7f48fbf3ea23ddd179a309a9f28f2802a2e785239ec09d 14.68MB / 28.10MB 25.2s
+#12 sha256:fba0d2862cc0e9d815853a4938943ddc675cbfa53e3b8de8630a198d4b87e4ea 19.92MB / 102.91MB 34.1s
+#12 sha256:162e72af9357868b8f7f48fbf3ea23ddd179a309a9f28f2802a2e785239ec09d 16.78MB / 28.10MB 28.5s
+#12 ...
+
+#10 [app build 1/6] FROM docker.io/library/node:24-alpine@sha256:116b800c3754b440ee0aa3ed2f20f5bf3d99a554bfd9adeea09ea8017f6e85f5
+#10 sha256:5990dbc8d622cb596f58f9515f179915723cd1126e3b5264bfc403a1430e880d 26.21MB / 56.85MB 40.7s
+#10 ...
+
+#12 [couchdb 1/2] FROM docker.io/library/couchdb:3.5.0@sha256:1c0a30a54535377bc9ae23f42efb1ca4e92abe796f78ec98b768ac1d5874cc1b
+#12 sha256:fba0d2862cc0e9d815853a4938943ddc675cbfa53e3b8de8630a198d4b87e4ea 23.07MB / 102.91MB 39.2s
+#12 sha256:162e72af9357868b8f7f48fbf3ea23ddd179a309a9f28f2802a2e785239ec09d 18.87MB / 28.10MB 32.6s
+#12 sha256:fba0d2862cc0e9d815853a4938943ddc675cbfa53e3b8de8630a198d4b87e4ea 26.21MB / 102.91MB 44.3s
+#12 sha256:162e72af9357868b8f7f48fbf3ea23ddd179a309a9f28f2802a2e785239ec09d 20.97MB / 28.10MB 35.9s
+#12 sha256:162e72af9357868b8f7f48fbf3ea23ddd179a309a9f28f2802a2e785239ec09d 23.07MB / 28.10MB 39.3s
+#12 ...
+
+#10 [app build 1/6] FROM docker.io/library/node:24-alpine@sha256:116b800c3754b440ee0aa3ed2f20f5bf3d99a554bfd9adeea09ea8017f6e85f5
+#10 sha256:5990dbc8d622cb596f58f9515f179915723cd1126e3b5264bfc403a1430e880d 35.65MB / 56.85MB 50.9s
+#10 ...
+
+#12 [couchdb 1/2] FROM docker.io/library/couchdb:3.5.0@sha256:1c0a30a54535377bc9ae23f42efb1ca4e92abe796f78ec98b768ac1d5874cc1b
+#12 sha256:fba0d2862cc0e9d815853a4938943ddc675cbfa53e3b8de8630a198d4b87e4ea 29.36MB / 102.91MB 49.4s
+#12 sha256:162e72af9357868b8f7f48fbf3ea23ddd179a309a9f28f2802a2e785239ec09d 25.17MB / 28.10MB 42.6s
+#12 sha256:fba0d2862cc0e9d815853a4938943ddc675cbfa53e3b8de8630a198d4b87e4ea 31.46MB / 102.91MB 54.5s
+#12 sha256:162e72af9357868b8f7f48fbf3ea23ddd179a309a9f28f2802a2e785239ec09d 27.26MB / 28.10MB 46.5s
+#12 sha256:162e72af9357868b8f7f48fbf3ea23ddd179a309a9f28f2802a2e785239ec09d 28.10MB / 28.10MB 47.9s done
+#12 extracting sha256:162e72af9357868b8f7f48fbf3ea23ddd179a309a9f28f2802a2e785239ec09d
+#12 extracting sha256:162e72af9357868b8f7f48fbf3ea23ddd179a309a9f28f2802a2e785239ec09d 0.4s done
+#12 extracting sha256:4bfe87e999e8e91a0d7594e0d29b0a8879ef1ace3ccf1cdb2ad896a754c38688 done
+#12 extracting sha256:91df9dda2f35c75433b041e11089c5f939b69d1c8a5123883405639db6cdb8ff 0.1s done
+#12 extracting sha256:aeede8e764e8668384716731ec44077ccc8da940f19681cb1260c06b25ce047a done
+#12 extracting sha256:f7628965715b1dd7230ab318af69b6eb333fec433811383e95bc73de791fba8f done
+#12 extracting sha256:96d5fadb657aeb91653ae7581744d489aada5e2cfde18cec09eeff769e671295 done
+#12 ...
+
+#10 [app build 1/6] FROM docker.io/library/node:24-alpine@sha256:116b800c3754b440ee0aa3ed2f20f5bf3d99a554bfd9adeea09ea8017f6e85f5
+#10 sha256:5990dbc8d622cb596f58f9515f179915723cd1126e3b5264bfc403a1430e880d 47.19MB / 56.85MB 61.1s
+#10 ...
+
+#12 [couchdb 1/2] FROM docker.io/library/couchdb:3.5.0@sha256:1c0a30a54535377bc9ae23f42efb1ca4e92abe796f78ec98b768ac1d5874cc1b
+#12 sha256:fba0d2862cc0e9d815853a4938943ddc675cbfa53e3b8de8630a198d4b87e4ea 35.65MB / 102.91MB 59.6s
+#12 sha256:fba0d2862cc0e9d815853a4938943ddc675cbfa53e3b8de8630a198d4b87e4ea 39.85MB / 102.91MB 64.7s
+#12 ...
+
+#10 [app build 1/6] FROM docker.io/library/node:24-alpine@sha256:116b800c3754b440ee0aa3ed2f20f5bf3d99a554bfd9adeea09ea8017f6e85f5
+#10 sha256:5990dbc8d622cb596f58f9515f179915723cd1126e3b5264bfc403a1430e880d 56.85MB / 56.85MB 70.2s done
+#10 extracting sha256:5990dbc8d622cb596f58f9515f179915723cd1126e3b5264bfc403a1430e880d 0.5s done
+#10 extracting sha256:3722e830560e975eadfac7540e68a2e9cf887dd49b0683e7a2738e88a3887ab4 0.0s done
+#10 extracting sha256:99412228dfd5923a0c1f3e338b4e46e42052692e1cd302db569cf260061897bb done
+#10 DONE 70.8s
+
+#12 [couchdb 1/2] FROM docker.io/library/couchdb:3.5.0@sha256:1c0a30a54535377bc9ae23f42efb1ca4e92abe796f78ec98b768ac1d5874cc1b
+#12 ...
+
+#13 [app build 2/6] WORKDIR /app
+#13 DONE 0.3s
+
+#14 [app build 3/6] COPY package*.json ./
+#14 DONE 0.0s
+
+#12 [couchdb 1/2] FROM docker.io/library/couchdb:3.5.0@sha256:1c0a30a54535377bc9ae23f42efb1ca4e92abe796f78ec98b768ac1d5874cc1b
+#12 sha256:fba0d2862cc0e9d815853a4938943ddc675cbfa53e3b8de8630a198d4b87e4ea 45.09MB / 102.91MB 69.6s
+#12 sha256:fba0d2862cc0e9d815853a4938943ddc675cbfa53e3b8de8630a198d4b87e4ea 47.19MB / 102.91MB 74.7s
+#12 ...
+
+#15 [app stage-1 4/6] RUN npm ci --omit=dev && npm cache clean --force
+#15 8.089 
+#15 8.089 added 74 packages, and audited 75 packages in 8s
+#15 8.089 
+#15 8.089 33 packages are looking for funding
+#15 8.089   run `npm fund` for details
+#15 8.090 
+#15 8.090 found 0 vulnerabilities
+#15 8.091 npm notice
+#15 8.091 npm notice New major version of npm available! 11.19.1 -> 12.2.2
+#15 8.091 npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2
+#15 8.091 npm notice To update run: npm install -g npm@12.2.2
+#15 8.091 npm notice
+#15 8.154 npm warn using --force Recommended protections disabled.
+#15 DONE 8.3s
+
+#16 [app stage-1 5/6] COPY server ./server
+#16 DONE 0.0s
+
+#17 [app build 4/6] RUN npm ci
+#17 ...
+
+#12 [couchdb 1/2] FROM docker.io/library/couchdb:3.5.0@sha256:1c0a30a54535377bc9ae23f42efb1ca4e92abe796f78ec98b768ac1d5874cc1b
+#12 sha256:fba0d2862cc0e9d815853a4938943ddc675cbfa53e3b8de8630a198d4b87e4ea 50.33MB / 102.91MB 79.8s
+#12 ...
+
+#17 [app build 4/6] RUN npm ci
+#17 10.70 
+#17 10.70 added 108 packages, and audited 109 packages in 11s
+#17 10.70 
+#17 10.70 42 packages are looking for funding
+#17 10.70   run `npm fund` for details
+#17 10.70 
+#17 10.70 found 0 vulnerabilities
+#17 10.70 npm warn install-scripts 1 package has install scripts not yet covered by allowScripts:
+#17 10.70 npm warn install-scripts   esbuild@0.28.2 (postinstall: node install.js)
+#17 10.70 npm warn install-scripts
+#17 10.70 npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+#17 10.70 npm notice
+#17 10.70 npm notice New major version of npm available! 11.19.1 -> 12.2.2
+#17 10.70 npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2
+#17 10.70 npm notice To update run: npm install -g npm@12.2.2
+#17 10.70 npm notice
+#17 DONE 10.7s
+
+#18 [app build 5/6] COPY client ./client
+#18 DONE 0.0s
+
+#19 [app build 6/6] RUN npm run build
+#19 0.129 
+#19 0.129 > techinventory@1.0.0 build
+#19 0.129 > vite build --config client/vite.config.js
+#19 0.129 
+#19 0.215 vite v7.3.8 building client environment for production...
+#19 0.243 transforming...
+#19 0.590 ✓ 23 modules transformed.
+#19 0.650 rendering chunks...
+#19 0.653 computing gzip size...
+#19 0.658 ../dist/index.html                   0.38 kB │ gzip:  0.28 kB
+#19 0.658 ../dist/assets/index-BZpkwoxN.css    4.37 kB │ gzip:  1.53 kB
+#19 0.658 ../dist/assets/index-DQsQ4Kn1.js   230.12 kB │ gzip: 71.82 kB
+#19 0.658 ✓ built in 431ms
+#19 DONE 0.7s
+
+#12 [couchdb 1/2] FROM docker.io/library/couchdb:3.5.0@sha256:1c0a30a54535377bc9ae23f42efb1ca4e92abe796f78ec98b768ac1d5874cc1b
+#12 ...
+
+#20 [app stage-1 6/6] COPY --from=build /app/dist ./dist
+#20 DONE 0.0s
+
+#12 [couchdb 1/2] FROM docker.io/library/couchdb:3.5.0@sha256:1c0a30a54535377bc9ae23f42efb1ca4e92abe796f78ec98b768ac1d5874cc1b
+#12 ...
+
+#21 [app] exporting to image
+#21 exporting layers 0.3s done
+#21 exporting manifest sha256:23a820474fd980fb047236f77c102b711f41a5583874c34ca3eb5aa2920914e3 done
+#21 exporting config sha256:f3c781cb9ef66e43ad3d8fd21d6d0400e376d3d83bcefd3334ae26f225bc0665 done
+#21 exporting attestation manifest sha256:1998d238962424162a7cac6d94d07a88b13d8c09e02ffb43cbe945e8ca773998 done
+#21 exporting manifest list sha256:c4e432242cb98c6dc0719526914dfeb0534ab4851e29e5c7da422ab2f991a205 done
+#21 naming to docker.io/library/techinventory-app:latest done
+#21 unpacking to docker.io/library/techinventory-app:latest 0.7s done
+#21 DONE 1.1s
+
+#22 [app] resolving provenance for metadata file
+#22 DONE 0.0s
+
+#12 [couchdb 1/2] FROM docker.io/library/couchdb:3.5.0@sha256:1c0a30a54535377bc9ae23f42efb1ca4e92abe796f78ec98b768ac1d5874cc1b
+#12 sha256:fba0d2862cc0e9d815853a4938943ddc675cbfa53e3b8de8630a198d4b87e4ea 55.57MB / 102.91MB 82.2s

@@ -1,0 +1,488 @@
+deploy	Set up job	﻿2026-11-12T22:47:50.8462626Z Current runner version: '2.338.2'
+deploy	Set up job	2026-11-12T22:47:50.8493506Z ##[group]Runner Image Provisioner
+deploy	Set up job	2026-11-12T22:47:50.8494897Z Hosted Compute Agent
+deploy	Set up job	2026-11-12T22:47:50.8495814Z Version: 20261028.624
+deploy	Set up job	2026-11-12T22:47:50.8496647Z Commit: 54898b74c23fde5556c9b3c3a2290865feef0dfe
+deploy	Set up job	2026-11-12T22:47:50.8497712Z Build Date: 2026-10-28T21:51:42Z
+deploy	Set up job	2026-11-12T22:47:50.8498607Z Worker ID: {8e614a71-e4e6-47a8-a02f-ed47a6128212}
+deploy	Set up job	2026-11-12T22:47:50.8499559Z Region: centralus
+deploy	Set up job	2026-11-12T22:47:50.8500279Z Cloud: Azure
+deploy	Set up job	2026-11-12T22:47:50.8501057Z ##[endgroup]
+deploy	Set up job	2026-11-12T22:47:50.8503094Z ##[group]Operating System
+deploy	Set up job	2026-11-12T22:47:50.8504083Z Ubuntu
+deploy	Set up job	2026-11-12T22:47:50.8505265Z 24.04.5
+deploy	Set up job	2026-11-12T22:47:50.8506074Z LTS
+deploy	Set up job	2026-11-12T22:47:50.8506802Z ##[endgroup]
+deploy	Set up job	2026-11-12T22:47:50.8507596Z ##[group]Runner Image
+deploy	Set up job	2026-11-12T22:47:50.8508386Z Image: ubuntu-24.04
+deploy	Set up job	2026-11-12T22:47:50.8509169Z Version: 20261101.360.1
+deploy	Set up job	2026-11-12T22:47:50.8510429Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261101.360/images/ubuntu/Ubuntu2404-Readme.md
+deploy	Set up job	2026-11-12T22:47:50.8512514Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261101.360
+deploy	Set up job	2026-11-12T22:47:50.8513725Z ##[endgroup]
+deploy	Set up job	2026-11-12T22:47:50.8515480Z ##[group]GITHUB_TOKEN Permissions
+deploy	Set up job	2026-11-12T22:47:50.8517852Z Contents: read
+deploy	Set up job	2026-11-12T22:47:50.8518786Z Metadata: read
+deploy	Set up job	2026-11-12T22:47:50.8519489Z ##[endgroup]
+deploy	Set up job	2026-11-12T22:47:50.8521821Z Secret source: Actions
+deploy	Set up job	2026-11-12T22:47:50.8523036Z Cache mode: write
+deploy	Set up job	2026-11-12T22:47:50.8524061Z Prepare workflow directory
+deploy	Set up job	2026-11-12T22:47:50.8888848Z Prepare all required actions
+deploy	Set up job	2026-11-12T22:47:50.8938922Z Getting action download info
+deploy	Set up job	2026-11-12T22:47:51.1795810Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+deploy	Set up job	2026-11-12T22:47:51.4254180Z Complete job name: deploy
+deploy	Run actions/checkout@v4	﻿2026-11-12T22:47:51.5185686Z ##[group]Run actions/checkout@v4
+deploy	Run actions/checkout@v4	2026-11-12T22:47:51.5186745Z with:
+deploy	Run actions/checkout@v4	2026-11-12T22:47:51.5187404Z   ref: 7b6b2e779c7ce737875591219b9fe3269418c699
+deploy	Run actions/checkout@v4	2026-11-12T22:47:51.5188174Z   repository: CodexVex/TechInventory
+deploy	Run actions/checkout@v4	2026-11-12T22:47:51.5191975Z   token: ***
+deploy	Run actions/checkout@v4	2026-11-12T22:47:51.5192588Z   ssh-strict: true
+deploy	Run actions/checkout@v4	2026-11-12T22:47:51.5193118Z   ssh-user: git
+deploy	Run actions/checkout@v4	2026-11-12T22:47:51.5193658Z   persist-credentials: true
+deploy	Run actions/checkout@v4	2026-11-12T22:47:51.5194244Z   clean: true
+deploy	Run actions/checkout@v4	2026-11-12T22:47:51.5194980Z   sparse-checkout-cone-mode: true
+deploy	Run actions/checkout@v4	2026-11-12T22:47:51.5195600Z   fetch-depth: 1
+deploy	Run actions/checkout@v4	2026-11-12T22:47:51.5196127Z   fetch-tags: false
+deploy	Run actions/checkout@v4	2026-11-12T22:47:51.5196671Z   show-progress: true
+deploy	Run actions/checkout@v4	2026-11-12T22:47:51.5197220Z   lfs: false
+deploy	Run actions/checkout@v4	2026-11-12T22:47:51.5197733Z   submodules: false
+deploy	Run actions/checkout@v4	2026-11-12T22:47:51.5198284Z   set-safe-directory: true
+deploy	Run actions/checkout@v4	2026-11-12T22:47:51.5198882Z   allow-unsafe-pr-checkout: false
+deploy	Run actions/checkout@v4	2026-11-12T22:47:51.5199972Z ##[endgroup]
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.0483866Z Syncing repository: CodexVex/TechInventory
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.0486926Z ##[group]Getting Git version info
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.0488027Z Working directory is '/home/runner/work/TechInventory/TechInventory'
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.0637318Z [command]/usr/bin/git version
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.0795385Z git version 2.56.0
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.0819835Z ##[endgroup]
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.0837098Z Temporarily overriding HOME='/home/runner/work/_temp/98648b95-d18e-43f7-bfe7-f0b344ba8752' before making global git config changes
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.0839279Z Adding repository directory to the temporary git global config as a safe directory
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.0842617Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/TechInventory/TechInventory
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.1086224Z Deleting the contents of '/home/runner/work/TechInventory/TechInventory'
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.1102196Z ##[group]Initializing the repository
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.1103405Z [command]/usr/bin/git init /home/runner/work/TechInventory/TechInventory
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.1249661Z hint: Using 'master' as the name for the initial branch. This default branch name
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.1252215Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.1254946Z hint: to use in all of your new repositories, which will suppress this warning,
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.1256706Z hint: call:
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.1257738Z hint:
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.1258952Z hint: 	git config --global init.defaultBranch <name>
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.1260360Z hint:
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.1261763Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.1263854Z hint: 'development'. The just-created branch can be renamed via this command:
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.1286715Z hint:
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.1288316Z hint: 	git branch -m <name>
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.1289996Z hint:
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.1291977Z hint: Disable this message with "git config set advice.defaultBranchName false"
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.1294661Z Initialized empty Git repository in /home/runner/work/TechInventory/TechInventory/.git/
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.1300484Z [command]/usr/bin/git remote add origin https://github.com/CodexVex/TechInventory
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.1566601Z ##[endgroup]
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.1568681Z ##[group]Disabling automatic garbage collection
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.1570586Z [command]/usr/bin/git config --local gc.auto 0
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.1622508Z ##[endgroup]
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.1624759Z ##[group]Setting up auth
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.1631468Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.1681259Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.2230703Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.2286101Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.2536280Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.2583339Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.2838441Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.2890675Z ##[endgroup]
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.2891836Z ##[group]Fetching the repository
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.2905223Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin 7b6b2e779c7ce737875591219b9fe3269418c699
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.7126330Z From https://github.com/CodexVex/TechInventory
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.7128309Z  * branch            7b6b2e779c7ce737875591219b9fe3269418c699 -> FETCH_HEAD
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.7134959Z ##[endgroup]
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.7137165Z ##[group]Determining the checkout info
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.7139175Z ##[endgroup]
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.7140941Z [command]/usr/bin/git sparse-checkout disable
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.7211410Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.7255659Z ##[group]Checking out the ref
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.7258165Z [command]/usr/bin/git checkout --progress --force 7b6b2e779c7ce737875591219b9fe3269418c699
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.7353146Z Note: switching to '7b6b2e779c7ce737875591219b9fe3269418c699'.
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.7354905Z 
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.7355787Z You are in 'detached HEAD' state. You can look around, make experimental
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.7358031Z changes and commit them, and you can discard any commits you make in this
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.7360440Z state without impacting any branches by switching back to a branch.
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.7361809Z 
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.7362835Z If you want to create a new branch to retain commits you create, you may
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.7365368Z do so (now or later) by using -c with the switch command. Example:
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.7366714Z 
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.7367453Z   git switch -c <new-branch-name>
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.7368436Z 
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.7369435Z Or undo this operation with:
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.7370374Z 
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.7371040Z   git switch -
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.7371849Z 
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.7373014Z Turn off this advice by setting config variable advice.detachedHead to false
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.7374779Z 
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.7376076Z HEAD is now at 7b6b2e7 Add verified CI evidence, articles and application readiness check
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.7534855Z ##[endgroup]
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.7587718Z [command]/usr/bin/git log -1 --format=%H
+deploy	Run actions/checkout@v4	2026-11-12T22:47:52.7622045Z 7b6b2e779c7ce737875591219b9fe3269418c699
+deploy	Configure SSH	﻿2026-11-12T22:47:52.7925176Z ##[group]Run mkdir -p ~/.ssh
+deploy	Configure SSH	2026-11-12T22:47:52.7926836Z ^[[36;1mmkdir -p ~/.ssh^[[0m
+deploy	Configure SSH	2026-11-12T22:47:52.7928396Z ^[[36;1mprintf '%s\n' "$SSH_KEY" > ~/.ssh/id_ed25519^[[0m
+deploy	Configure SSH	2026-11-12T22:47:52.7930145Z ^[[36;1mchmod 600 ~/.ssh/id_ed25519^[[0m
+deploy	Configure SSH	2026-11-12T22:47:52.7931907Z ^[[36;1mprintf '%s\n' "$KNOWN_HOSTS" > ~/.ssh/known_hosts^[[0m
+deploy	Configure SSH	2026-11-12T22:47:52.7958803Z shell: /usr/bin/bash -e {0}
+deploy	Configure SSH	2026-11-12T22:47:52.7960232Z env:
+deploy	Configure SSH	2026-11-12T22:47:52.7969691Z   SSH_KEY: ***
+deploy	Configure SSH	2026-11-12T22:47:52.7973004Z   KNOWN_HOSTS: ***
+deploy	Configure SSH	2026-11-12T22:47:52.7974205Z ##[endgroup]
+deploy	Upload verified source and deploy	﻿2026-11-12T22:47:52.8264694Z ##[group]Run git archive HEAD | ssh "$SSH_USER@$SSH_HOST" 'mkdir -p ~/*** && tar -x -C ~/***'
+deploy	Upload verified source and deploy	2026-11-12T22:47:52.8268120Z ^[[36;1mgit archive HEAD | ssh "$SSH_USER@$SSH_HOST" 'mkdir -p ~/*** && tar -x -C ~/***'^[[0m
+deploy	Upload verified source and deploy	2026-11-12T22:47:52.8271718Z ^[[36;1mssh "$SSH_USER@$SSH_HOST" 'cd ~/*** && docker compose -f compose.yaml -f compose.production.yaml up -d --build --wait'^[[0m
+deploy	Upload verified source and deploy	2026-11-12T22:47:52.8295184Z shell: /usr/bin/bash -e {0}
+deploy	Upload verified source and deploy	2026-11-12T22:47:52.8296504Z env:
+deploy	Upload verified source and deploy	2026-11-12T22:47:52.8297646Z   SSH_HOST: ***
+deploy	Upload verified source and deploy	2026-11-12T22:47:52.8298836Z   SSH_USER: ***
+deploy	Upload verified source and deploy	2026-11-12T22:47:52.8299946Z ##[endgroup]
+deploy	Upload verified source and deploy	2026-11-12T22:47:54.4115656Z  caddy Pulling 
+deploy	Upload verified source and deploy	2026-11-12T22:47:55.0148291Z  4f4fb700ef54 Pulling fs layer 
+deploy	Upload verified source and deploy	2026-11-12T22:47:55.0149409Z  881fc932939e Pulling fs layer 
+deploy	Upload verified source and deploy	2026-11-12T22:47:55.0155917Z  c4d6974dbf71 Pulling fs layer 
+deploy	Upload verified source and deploy	2026-11-12T22:47:55.0156675Z  e3a802d3a0a9 Pulling fs layer 
+deploy	Upload verified source and deploy	2026-11-12T22:47:55.0157215Z  5000c332a1cc Pulling fs layer 
+deploy	Upload verified source and deploy	2026-11-12T22:47:55.1729492Z  5000c332a1cc Downloading [========>                                          ]  3.146MB/18.13MB
+deploy	Upload verified source and deploy	2026-11-12T22:47:55.2297892Z  5000c332a1cc Downloading [==============>                                    ]  5.243MB/18.13MB
+deploy	Upload verified source and deploy	2026-11-12T22:47:55.2323768Z  4f4fb700ef54 Download complete 
+deploy	Upload verified source and deploy	2026-11-12T22:47:55.2324933Z  881fc932939e Downloading [=============>                                     ]  1.049MB/3.854MB
+deploy	Upload verified source and deploy	2026-11-12T22:47:55.3509054Z  881fc932939e Downloading [==================================================>]  3.854MB/3.854MB
+deploy	Upload verified source and deploy	2026-11-12T22:47:55.3510033Z  c4d6974dbf71 Downloading [=====================================>             ]  2.097MB/2.799MB
+deploy	Upload verified source and deploy	2026-11-12T22:47:55.3547128Z  e3a802d3a0a9 Download complete 
+deploy	Upload verified source and deploy	2026-11-12T22:47:55.3548021Z  5000c332a1cc Downloading [====================>                              ]   7.34MB/18.13MB
+deploy	Upload verified source and deploy	2026-11-12T22:47:55.4280740Z  ed4aeb1ef3c3 Downloading [==================================================>]  18.43kB/18.43kB
+deploy	Upload verified source and deploy	2026-11-12T22:47:55.4282861Z  881fc932939e Downloading [==================================================>]  3.854MB/3.854MB
+deploy	Upload verified source and deploy	2026-11-12T22:47:55.4284031Z  c4d6974dbf71 Downloading [==================================================>]  2.799MB/2.799MB
+deploy	Upload verified source and deploy	2026-11-12T22:47:55.4285125Z  5000c332a1cc Downloading [==================================>                ]  12.58MB/18.13MB
+deploy	Upload verified source and deploy	2026-11-12T22:47:55.5287036Z  5000c332a1cc Downloading [==================================================>]  18.13MB/18.13MB
+deploy	Upload verified source and deploy	2026-11-12T22:47:55.5291856Z  ed4aeb1ef3c3 Downloading [==================================================>]  18.43kB/18.43kB
+deploy	Upload verified source and deploy	2026-11-12T22:47:55.5292784Z  881fc932939e Downloading [==================================================>]  3.854MB/3.854MB
+deploy	Upload verified source and deploy	2026-11-12T22:47:55.5293646Z  c4d6974dbf71 Downloading [==================================================>]  2.799MB/2.799MB
+deploy	Upload verified source and deploy	2026-11-12T22:47:55.6288502Z  ed4aeb1ef3c3 Downloading [==================================================>]  18.43kB/18.43kB
+deploy	Upload verified source and deploy	2026-11-12T22:47:55.6290294Z  881fc932939e Downloading [==================================================>]  3.854MB/3.854MB
+deploy	Upload verified source and deploy	2026-11-12T22:47:55.6291099Z  c4d6974dbf71 Downloading [==================================================>]  2.799MB/2.799MB
+deploy	Upload verified source and deploy	2026-11-12T22:47:55.6292310Z  5000c332a1cc Downloading [==================================================>]  18.13MB/18.13MB
+deploy	Upload verified source and deploy	2026-11-12T22:47:55.7303234Z  ed4aeb1ef3c3 Downloading [==================================================>]  18.43kB/18.43kB
+deploy	Upload verified source and deploy	2026-11-12T22:47:55.7305209Z  881fc932939e Downloading [==================================================>]  3.854MB/3.854MB
+deploy	Upload verified source and deploy	2026-11-12T22:47:55.7306549Z  c4d6974dbf71 Downloading [==================================================>]  2.799MB/2.799MB
+deploy	Upload verified source and deploy	2026-11-12T22:47:55.7308010Z  5000c332a1cc Downloading [==================================================>]  18.13MB/18.13MB
+deploy	Upload verified source and deploy	2026-11-12T22:47:55.8299777Z  ed4aeb1ef3c3 Downloading [==================================================>]  18.43kB/18.43kB
+deploy	Upload verified source and deploy	2026-11-12T22:47:55.8300696Z  881fc932939e Downloading [==================================================>]  3.854MB/3.854MB
+deploy	Upload verified source and deploy	2026-11-12T22:47:55.8301945Z  c4d6974dbf71 Downloading [==================================================>]  2.799MB/2.799MB
+deploy	Upload verified source and deploy	2026-11-12T22:47:55.8302634Z  5000c332a1cc Downloading [==================================================>]  18.13MB/18.13MB
+deploy	Upload verified source and deploy	2026-11-12T22:47:55.9602191Z  ed4aeb1ef3c3 Downloading [==================================================>]  18.43kB/18.43kB
+deploy	Upload verified source and deploy	2026-11-12T22:47:55.9628659Z  881fc932939e Download complete 
+deploy	Upload verified source and deploy	2026-11-12T22:47:55.9634077Z  c4d6974dbf71 Download complete 
+deploy	Upload verified source and deploy	2026-11-12T22:47:55.9635019Z  5000c332a1cc Downloading [==================================================>]  18.13MB/18.13MB
+deploy	Upload verified source and deploy	2026-11-12T22:47:55.9654560Z  881fc932939e Extracting 1 s
+deploy	Upload verified source and deploy	2026-11-12T22:47:56.0347880Z  ed4aeb1ef3c3 Download complete 
+deploy	Upload verified source and deploy	2026-11-12T22:47:56.0349960Z  5000c332a1cc Download complete 
+deploy	Upload verified source and deploy	2026-11-12T22:47:56.0353542Z  f4183d0ed1bf Downloading [==================================================>]  316.2kB/316.2kB
+deploy	Upload verified source and deploy	2026-11-12T22:47:56.0379717Z  881fc932939e Extracting 1 s
+deploy	Upload verified source and deploy	2026-11-12T22:47:56.1300307Z  f4183d0ed1bf Download complete 
+deploy	Upload verified source and deploy	2026-11-12T22:47:56.1326245Z  881fc932939e Extracting 1 s
+deploy	Upload verified source and deploy	2026-11-12T22:47:56.2314856Z  881fc932939e Extracting 1 s
+deploy	Upload verified source and deploy	2026-11-12T22:47:56.3324924Z  881fc932939e Pull complete 
+deploy	Upload verified source and deploy	2026-11-12T22:47:56.3344962Z  c4d6974dbf71 Extracting 1 s
+deploy	Upload verified source and deploy	2026-11-12T22:47:56.5291225Z  e3a802d3a0a9 Pull complete 
+deploy	Upload verified source and deploy	2026-11-12T22:47:56.5292017Z  c4d6974dbf71 Pull complete 
+deploy	Upload verified source and deploy	2026-11-12T22:47:56.6316337Z  5000c332a1cc Extracting 1 s
+deploy	Upload verified source and deploy	2026-11-12T22:47:56.7322860Z  5000c332a1cc Extracting 1 s
+deploy	Upload verified source and deploy	2026-11-12T22:47:56.8308068Z  5000c332a1cc Extracting 1 s
+deploy	Upload verified source and deploy	2026-11-12T22:47:56.9331219Z  5000c332a1cc Extracting 1 s
+deploy	Upload verified source and deploy	2026-11-12T22:47:57.0325604Z  5000c332a1cc Extracting 1 s
+deploy	Upload verified source and deploy	2026-11-12T22:47:57.1297276Z  5000c332a1cc Extracting 1 s
+deploy	Upload verified source and deploy	2026-11-12T22:47:57.2291638Z  4f4fb700ef54 Pull complete 
+deploy	Upload verified source and deploy	2026-11-12T22:47:57.2295520Z  5000c332a1cc Pull complete 
+deploy	Upload verified source and deploy	2026-11-12T22:47:57.2588762Z  caddy Pulled 
+deploy	Upload verified source and deploy	2026-11-12T22:47:57.3080726Z time="2026-11-12T22:47:57Z" level=warning msg="Docker Compose is configured to build using Bake, but buildx isn't installed"
+deploy	Upload verified source and deploy	2026-11-12T22:47:57.5143602Z #0 building with "default" instance using docker driver
+deploy	Upload verified source and deploy	2026-11-12T22:47:57.5144077Z 
+deploy	Upload verified source and deploy	2026-11-12T22:47:57.5144767Z #1 [couchdb internal] load build definition from Dockerfile.couchdb
+deploy	Upload verified source and deploy	2026-11-12T22:47:57.5145463Z #1 transferring dockerfile: 146B done
+deploy	Upload verified source and deploy	2026-11-12T22:47:57.5145864Z #1 DONE 0.1s
+deploy	Upload verified source and deploy	2026-11-12T22:47:57.6942117Z 
+deploy	Upload verified source and deploy	2026-11-12T22:47:57.6942704Z #2 [couchdb internal] load metadata for docker.io/library/couchdb:3.5.0
+deploy	Upload verified source and deploy	2026-11-12T22:47:58.0173926Z #2 DONE 0.5s
+deploy	Upload verified source and deploy	2026-11-12T22:47:58.1313968Z 
+deploy	Upload verified source and deploy	2026-11-12T22:47:58.1314448Z #3 [couchdb internal] load .dockerignore
+deploy	Upload verified source and deploy	2026-11-12T22:47:58.1315195Z #3 transferring context: 77B done
+deploy	Upload verified source and deploy	2026-11-12T22:47:58.1315549Z #3 DONE 0.1s
+deploy	Upload verified source and deploy	2026-11-12T22:47:58.2365425Z 
+deploy	Upload verified source and deploy	2026-11-12T22:47:58.2366146Z #4 [couchdb internal] load build context
+deploy	Upload verified source and deploy	2026-11-12T22:47:58.4678895Z #4 transferring context: 65B done
+deploy	Upload verified source and deploy	2026-11-12T22:47:58.4679429Z #4 DONE 0.2s
+deploy	Upload verified source and deploy	2026-11-12T22:47:58.4679625Z 
+deploy	Upload verified source and deploy	2026-11-12T22:47:58.4680210Z #5 [couchdb 1/2] FROM docker.io/library/couchdb:3.5.0@sha256:1c0a30a54535377bc9ae23f42efb1ca4e92abe796f78ec98b768ac1d5874cc1b
+deploy	Upload verified source and deploy	2026-11-12T22:47:58.4681452Z #5 resolve docker.io/library/couchdb:3.5.0@sha256:1c0a30a54535377bc9ae23f42efb1ca4e92abe796f78ec98b768ac1d5874cc1b 0.1s done
+deploy	Upload verified source and deploy	2026-11-12T22:47:59.0351674Z #5 DONE 0.9s
+deploy	Upload verified source and deploy	2026-11-12T22:47:59.2009234Z 
+deploy	Upload verified source and deploy	2026-11-12T22:47:59.2010416Z #5 [couchdb 1/2] FROM docker.io/library/couchdb:3.5.0@sha256:1c0a30a54535377bc9ae23f42efb1ca4e92abe796f78ec98b768ac1d5874cc1b
+deploy	Upload verified source and deploy	2026-11-12T22:47:59.2291519Z #5 sha256:d21eae8ecc488e1f57057e71d3d85b11a74f7d6ad9edb904b7d0663b1e2128a7 122B / 122B 0.2s
+deploy	Upload verified source and deploy	2026-11-12T22:47:59.3339062Z #5 sha256:d21eae8ecc488e1f57057e71d3d85b11a74f7d6ad9edb904b7d0663b1e2128a7 122B / 122B 0.2s done
+deploy	Upload verified source and deploy	2026-11-12T22:47:59.3340219Z #5 sha256:3c728f23e61ab2d3bccb874ac52a32ab78993f7bfff38773f22fa8890baa7fde 2.23kB / 2.23kB 0.2s done
+deploy	Upload verified source and deploy	2026-11-12T22:47:59.3341298Z #5 sha256:a6f30cc7cb486810eba01b0abc11b1be9fa571ec4e88001cef23606995b09289 1.25kB / 1.25kB 0.2s
+deploy	Upload verified source and deploy	2026-11-12T22:47:59.3342268Z #5 sha256:768af929a959d8a2bd13618b8bf4110c9cc0f349972095a5b1eca6244ef4d5fa 379B / 379B 0.2s
+deploy	Upload verified source and deploy	2026-11-12T22:47:59.5091273Z #5 sha256:a6f30cc7cb486810eba01b0abc11b1be9fa571ec4e88001cef23606995b09289 1.25kB / 1.25kB 0.2s done
+deploy	Upload verified source and deploy	2026-11-12T22:47:59.5092348Z #5 sha256:768af929a959d8a2bd13618b8bf4110c9cc0f349972095a5b1eca6244ef4d5fa 379B / 379B 0.2s done
+deploy	Upload verified source and deploy	2026-11-12T22:47:59.5093280Z #5 sha256:65742eda7201276852ec57066565a654f71143c69868528f2b7b00d6ab89ee98 3.15MB / 103.24MB 0.2s
+deploy	Upload verified source and deploy	2026-11-12T22:47:59.6308456Z #5 sha256:c3d028dd9228411efb7d9509493db9441a8c58f4d2da186c2c056fea0f473b50 274B / 274B 0.1s done
+deploy	Upload verified source and deploy	2026-11-12T22:47:59.6309601Z #5 sha256:5d1c4301450a190841997ce4d608e8f4fa905c5e05265d6a9dc675a8558b506f 76.50kB / 76.50kB 0.1s done
+deploy	Upload verified source and deploy	2026-11-12T22:47:59.7776065Z #5 sha256:65742eda7201276852ec57066565a654f71143c69868528f2b7b00d6ab89ee98 8.39MB / 103.24MB 0.5s
+deploy	Upload verified source and deploy	2026-11-12T22:47:59.7777121Z #5 sha256:5a5f0f53a68ee7accfc9a289ee082f475456a30da48c436d7e492e6a51784c02 401.73kB / 401.73kB 0.1s done
+deploy	Upload verified source and deploy	2026-11-12T22:47:59.7781583Z #5 sha256:52a88ce690c27e46c06ca70bc34855caa33c6fdeb88e0d351d38ee765cec1064 1.18kB / 1.18kB 0.1s done
+deploy	Upload verified source and deploy	2026-11-12T22:47:59.7782552Z #5 sha256:5956f411eb081fd5e98805a4e179ed6ce37e970dae9f90073f44e3a29846e56c 2.10MB / 7.88MB 0.2s
+deploy	Upload verified source and deploy	2026-11-12T22:47:59.9259660Z #5 sha256:65742eda7201276852ec57066565a654f71143c69868528f2b7b00d6ab89ee98 13.63MB / 103.24MB 0.6s
+deploy	Upload verified source and deploy	2026-11-12T22:47:59.9260680Z #5 sha256:5956f411eb081fd5e98805a4e179ed6ce37e970dae9f90073f44e3a29846e56c 5.24MB / 7.88MB 0.3s
+deploy	Upload verified source and deploy	2026-11-12T22:47:59.9261635Z #5 sha256:1adabd6b0d6b8acfa4ad149a984df0977135a7babf423538c7284a02744a4ee8 1.05MB / 28.23MB 0.2s
+deploy	Upload verified source and deploy	2026-11-12T22:48:00.1020467Z #5 sha256:65742eda7201276852ec57066565a654f71143c69868528f2b7b00d6ab89ee98 18.87MB / 103.24MB 0.8s
+deploy	Upload verified source and deploy	2026-11-12T22:48:00.1021551Z #5 sha256:5956f411eb081fd5e98805a4e179ed6ce37e970dae9f90073f44e3a29846e56c 7.88MB / 7.88MB 0.5s done
+deploy	Upload verified source and deploy	2026-11-12T22:48:00.1022575Z #5 sha256:1adabd6b0d6b8acfa4ad149a984df0977135a7babf423538c7284a02744a4ee8 6.29MB / 28.23MB 0.3s
+deploy	Upload verified source and deploy	2026-11-12T22:48:00.2262376Z #5 sha256:1adabd6b0d6b8acfa4ad149a984df0977135a7babf423538c7284a02744a4ee8 12.58MB / 28.23MB 0.5s
+deploy	Upload verified source and deploy	2026-11-12T22:48:00.3804707Z #5 sha256:65742eda7201276852ec57066565a654f71143c69868528f2b7b00d6ab89ee98 30.41MB / 103.24MB 1.1s
+deploy	Upload verified source and deploy	2026-11-12T22:48:00.3805879Z #5 sha256:1adabd6b0d6b8acfa4ad149a984df0977135a7babf423538c7284a02744a4ee8 19.92MB / 28.23MB 0.6s
+deploy	Upload verified source and deploy	2026-11-12T22:48:00.5288358Z #5 sha256:65742eda7201276852ec57066565a654f71143c69868528f2b7b00d6ab89ee98 41.94MB / 103.24MB 1.2s
+deploy	Upload verified source and deploy	2026-11-12T22:48:00.5289390Z #5 sha256:1adabd6b0d6b8acfa4ad149a984df0977135a7babf423538c7284a02744a4ee8 28.23MB / 28.23MB 0.8s
+deploy	Upload verified source and deploy	2026-11-12T22:48:00.6769314Z #5 sha256:65742eda7201276852ec57066565a654f71143c69868528f2b7b00d6ab89ee98 52.43MB / 103.24MB 1.4s
+deploy	Upload verified source and deploy	2026-11-12T22:48:00.8290906Z #5 sha256:65742eda7201276852ec57066565a654f71143c69868528f2b7b00d6ab89ee98 68.16MB / 103.24MB 1.5s
+deploy	Upload verified source and deploy	2026-11-12T22:48:00.9730817Z #5 sha256:65742eda7201276852ec57066565a654f71143c69868528f2b7b00d6ab89ee98 83.89MB / 103.24MB 1.7s
+deploy	Upload verified source and deploy	2026-11-12T22:48:01.1277274Z #5 sha256:65742eda7201276852ec57066565a654f71143c69868528f2b7b00d6ab89ee98 101.71MB / 103.24MB 1.8s
+deploy	Upload verified source and deploy	2026-11-12T22:48:03.1809721Z #5 sha256:1adabd6b0d6b8acfa4ad149a984df0977135a7babf423538c7284a02744a4ee8 28.23MB / 28.23MB 3.5s done
+deploy	Upload verified source and deploy	2026-11-12T22:48:03.4091881Z #5 sha256:65742eda7201276852ec57066565a654f71143c69868528f2b7b00d6ab89ee98 103.24MB / 103.24MB 3.9s done
+deploy	Upload verified source and deploy	2026-11-12T22:48:03.4092958Z #5 extracting sha256:1adabd6b0d6b8acfa4ad149a984df0977135a7babf423538c7284a02744a4ee8
+deploy	Upload verified source and deploy	2026-11-12T22:48:04.6771984Z #5 extracting sha256:1adabd6b0d6b8acfa4ad149a984df0977135a7babf423538c7284a02744a4ee8 1.4s done
+deploy	Upload verified source and deploy	2026-11-12T22:48:04.6772849Z #5 DONE 6.5s
+deploy	Upload verified source and deploy	2026-11-12T22:48:04.8880137Z 
+deploy	Upload verified source and deploy	2026-11-12T22:48:04.8881621Z #5 [couchdb 1/2] FROM docker.io/library/couchdb:3.5.0@sha256:1c0a30a54535377bc9ae23f42efb1ca4e92abe796f78ec98b768ac1d5874cc1b
+deploy	Upload verified source and deploy	2026-11-12T22:48:04.8882849Z #5 extracting sha256:52a88ce690c27e46c06ca70bc34855caa33c6fdeb88e0d351d38ee765cec1064 0.1s done
+deploy	Upload verified source and deploy	2026-11-12T22:48:04.8883787Z #5 extracting sha256:5956f411eb081fd5e98805a4e179ed6ce37e970dae9f90073f44e3a29846e56c
+deploy	Upload verified source and deploy	2026-11-12T22:48:05.2551242Z #5 extracting sha256:5956f411eb081fd5e98805a4e179ed6ce37e970dae9f90073f44e3a29846e56c 0.5s done
+deploy	Upload verified source and deploy	2026-11-12T22:48:05.2551990Z #5 DONE 7.1s
+deploy	Upload verified source and deploy	2026-11-12T22:48:05.3777936Z 
+deploy	Upload verified source and deploy	2026-11-12T22:48:05.3779249Z #5 [couchdb 1/2] FROM docker.io/library/couchdb:3.5.0@sha256:1c0a30a54535377bc9ae23f42efb1ca4e92abe796f78ec98b768ac1d5874cc1b
+deploy	Upload verified source and deploy	2026-11-12T22:48:05.3780526Z #5 extracting sha256:5a5f0f53a68ee7accfc9a289ee082f475456a30da48c436d7e492e6a51784c02 0.1s done
+deploy	Upload verified source and deploy	2026-11-12T22:48:05.3782122Z #5 extracting sha256:5d1c4301450a190841997ce4d608e8f4fa905c5e05265d6a9dc675a8558b506f 0.1s done
+deploy	Upload verified source and deploy	2026-11-12T22:48:05.3783047Z #5 DONE 7.2s
+deploy	Upload verified source and deploy	2026-11-12T22:48:05.5810160Z 
+deploy	Upload verified source and deploy	2026-11-12T22:48:05.5811396Z #5 [couchdb 1/2] FROM docker.io/library/couchdb:3.5.0@sha256:1c0a30a54535377bc9ae23f42efb1ca4e92abe796f78ec98b768ac1d5874cc1b
+deploy	Upload verified source and deploy	2026-11-12T22:48:05.5812569Z #5 extracting sha256:c3d028dd9228411efb7d9509493db9441a8c58f4d2da186c2c056fea0f473b50 0.1s done
+deploy	Upload verified source and deploy	2026-11-12T22:48:09.3913083Z #5 extracting sha256:65742eda7201276852ec57066565a654f71143c69868528f2b7b00d6ab89ee98
+deploy	Upload verified source and deploy	2026-11-12T22:48:09.3914075Z #5 extracting sha256:65742eda7201276852ec57066565a654f71143c69868528f2b7b00d6ab89ee98 4.0s done
+deploy	Upload verified source and deploy	2026-11-12T22:48:09.3915237Z #5 DONE 11.2s
+deploy	Upload verified source and deploy	2026-11-12T22:48:09.5020718Z 
+deploy	Upload verified source and deploy	2026-11-12T22:48:09.5021808Z #5 [couchdb 1/2] FROM docker.io/library/couchdb:3.5.0@sha256:1c0a30a54535377bc9ae23f42efb1ca4e92abe796f78ec98b768ac1d5874cc1b
+deploy	Upload verified source and deploy	2026-11-12T22:48:09.5022981Z #5 extracting sha256:768af929a959d8a2bd13618b8bf4110c9cc0f349972095a5b1eca6244ef4d5fa 0.1s done
+deploy	Upload verified source and deploy	2026-11-12T22:48:09.5023926Z #5 extracting sha256:a6f30cc7cb486810eba01b0abc11b1be9fa571ec4e88001cef23606995b09289 0.0s done
+deploy	Upload verified source and deploy	2026-11-12T22:48:09.5025077Z #5 DONE 11.3s
+deploy	Upload verified source and deploy	2026-11-12T22:48:09.6209160Z 
+deploy	Upload verified source and deploy	2026-11-12T22:48:09.6210040Z #5 [couchdb 1/2] FROM docker.io/library/couchdb:3.5.0@sha256:1c0a30a54535377bc9ae23f42efb1ca4e92abe796f78ec98b768ac1d5874cc1b
+deploy	Upload verified source and deploy	2026-11-12T22:48:09.6211204Z #5 extracting sha256:3c728f23e61ab2d3bccb874ac52a32ab78993f7bfff38773f22fa8890baa7fde 0.1s done
+deploy	Upload verified source and deploy	2026-11-12T22:48:09.6212183Z #5 extracting sha256:d21eae8ecc488e1f57057e71d3d85b11a74f7d6ad9edb904b7d0663b1e2128a7 0.1s done
+deploy	Upload verified source and deploy	2026-11-12T22:48:09.6212852Z #5 DONE 11.4s
+deploy	Upload verified source and deploy	2026-11-12T22:48:09.7792455Z 
+deploy	Upload verified source and deploy	2026-11-12T22:48:09.7793248Z #6 [couchdb 2/2] COPY --chown=couchdb:couchdb couchdb.ini /opt/couchdb/etc/local.d/single-node.ini
+deploy	Upload verified source and deploy	2026-11-12T22:48:11.6327149Z #6 DONE 2.0s
+deploy	Upload verified source and deploy	2026-11-12T22:48:11.8001762Z 
+deploy	Upload verified source and deploy	2026-11-12T22:48:11.8002677Z #7 [couchdb] exporting to image
+deploy	Upload verified source and deploy	2026-11-12T22:48:11.8003154Z #7 exporting layers
+deploy	Upload verified source and deploy	2026-11-12T22:48:11.8777289Z #7 exporting layers 0.2s done
+deploy	Upload verified source and deploy	2026-11-12T22:48:11.8778064Z #7 exporting manifest sha256:749b992025e12b0dd0ed24210768377a32a3c660b9e86688eab4e2e47ed9dd9b
+deploy	Upload verified source and deploy	2026-11-12T22:48:12.0151598Z #7 exporting manifest sha256:749b992025e12b0dd0ed24210768377a32a3c660b9e86688eab4e2e47ed9dd9b 0.0s done
+deploy	Upload verified source and deploy	2026-11-12T22:48:12.0153666Z #7 exporting config sha256:7d6543887bd1157c903ce3fe867f64b51fbd21f63bb1e1fb27b56a64cda4d380 0.0s done
+deploy	Upload verified source and deploy	2026-11-12T22:48:12.0155366Z #7 exporting attestation manifest sha256:87d72b81377f291c1e0e52fef7148a34c023dfb6fd2ee956cd02188d92d51968
+deploy	Upload verified source and deploy	2026-11-12T22:48:12.1510687Z #7 exporting attestation manifest sha256:87d72b81377f291c1e0e52fef7148a34c023dfb6fd2ee956cd02188d92d51968 0.1s done
+deploy	Upload verified source and deploy	2026-11-12T22:48:12.1511987Z #7 exporting manifest list sha256:7b4c7f9637edf7e85dd27f9372cce6028ebaa9162753b9d46f29b10ca1c09840 0.0s done
+deploy	Upload verified source and deploy	2026-11-12T22:48:12.1513581Z #7 naming to docker.io/library/***-couchdb:latest
+deploy	Upload verified source and deploy	2026-11-12T22:48:12.3920433Z #7 naming to docker.io/library/***-couchdb:latest done
+deploy	Upload verified source and deploy	2026-11-12T22:48:12.3921233Z #7 unpacking to docker.io/library/***-couchdb:latest 0.1s done
+deploy	Upload verified source and deploy	2026-11-12T22:48:12.3921795Z #7 DONE 0.6s
+deploy	Upload verified source and deploy	2026-11-12T22:48:12.5486770Z 
+deploy	Upload verified source and deploy	2026-11-12T22:48:12.5487498Z #8 [couchdb] resolving provenance for metadata file
+deploy	Upload verified source and deploy	2026-11-12T22:48:12.6671581Z #8 DONE 0.0s
+deploy	Upload verified source and deploy	2026-11-12T22:48:12.6671798Z 
+deploy	Upload verified source and deploy	2026-11-12T22:48:12.6672022Z #9 [app internal] load build definition from Dockerfile
+deploy	Upload verified source and deploy	2026-11-12T22:48:12.6672502Z #9 transferring dockerfile: 390B done
+deploy	Upload verified source and deploy	2026-11-12T22:48:12.6672864Z #9 DONE 0.0s
+deploy	Upload verified source and deploy	2026-11-12T22:48:12.6673337Z 
+deploy	Upload verified source and deploy	2026-11-12T22:48:12.6673587Z #10 [app internal] load metadata for docker.io/library/node:24-alpine
+deploy	Upload verified source and deploy	2026-11-12T22:48:13.0997764Z #10 DONE 0.4s
+deploy	Upload verified source and deploy	2026-11-12T22:48:13.2137868Z 
+deploy	Upload verified source and deploy	2026-11-12T22:48:13.2141293Z #11 [app internal] load .dockerignore
+deploy	Upload verified source and deploy	2026-11-12T22:48:13.2141795Z #11 transferring context: 77B done
+deploy	Upload verified source and deploy	2026-11-12T22:48:13.2143077Z #11 DONE 0.0s
+deploy	Upload verified source and deploy	2026-11-12T22:48:13.2149401Z 
+deploy	Upload verified source and deploy	2026-11-12T22:48:13.2149667Z #12 [app internal] load build context
+deploy	Upload verified source and deploy	2026-11-12T22:48:13.2150082Z #12 DONE 0.0s
+deploy	Upload verified source and deploy	2026-11-12T22:48:13.2150241Z 
+deploy	Upload verified source and deploy	2026-11-12T22:48:13.2150743Z #13 [app build 1/6] FROM docker.io/library/node:24-alpine@sha256:116b800c3754b440ee0aa3ed2f20f5bf3d99a554bfd9adeea09ea8017f6e85f5
+deploy	Upload verified source and deploy	2026-11-12T22:48:13.2151811Z #13 resolve docker.io/library/node:24-alpine@sha256:116b800c3754b440ee0aa3ed2f20f5bf3d99a554bfd9adeea09ea8017f6e85f5 0.1s done
+deploy	Upload verified source and deploy	2026-11-12T22:48:13.2152534Z #13 DONE 0.1s
+deploy	Upload verified source and deploy	2026-11-12T22:48:13.3435004Z 
+deploy	Upload verified source and deploy	2026-11-12T22:48:13.3435892Z #12 [app internal] load build context
+deploy	Upload verified source and deploy	2026-11-12T22:48:13.3439381Z #12 transferring context: 98.93kB 0.0s done
+deploy	Upload verified source and deploy	2026-11-12T22:48:13.3439912Z #12 DONE 0.1s
+deploy	Upload verified source and deploy	2026-11-12T22:48:13.3440069Z 
+deploy	Upload verified source and deploy	2026-11-12T22:48:13.3440555Z #13 [app build 1/6] FROM docker.io/library/node:24-alpine@sha256:116b800c3754b440ee0aa3ed2f20f5bf3d99a554bfd9adeea09ea8017f6e85f5
+deploy	Upload verified source and deploy	2026-11-12T22:48:13.5299876Z #13 DONE 0.4s
+deploy	Upload verified source and deploy	2026-11-12T22:48:13.6708743Z 
+deploy	Upload verified source and deploy	2026-11-12T22:48:13.6709583Z #13 [app build 1/6] FROM docker.io/library/node:24-alpine@sha256:116b800c3754b440ee0aa3ed2f20f5bf3d99a554bfd9adeea09ea8017f6e85f5
+deploy	Upload verified source and deploy	2026-11-12T22:48:13.6710670Z #13 sha256:7bb632bc9bd793a348866a7dd7920cf89dfc87205c6d38cda182ea6d8065b8e5 442B / 442B 0.1s done
+deploy	Upload verified source and deploy	2026-11-12T22:48:13.7858862Z #13 sha256:7eb569707982863466c2b0bcfddda86fb4842fccfaec088d1354f6a29e2856bb 1.26MB / 1.26MB 0.1s done
+deploy	Upload verified source and deploy	2026-11-12T22:48:13.7859987Z #13 sha256:86781d25d3989ead8f09c45716da0159c1dd0be2c753a51f15b6c60f4b9a97db 5.24MB / 57.42MB 0.2s
+deploy	Upload verified source and deploy	2026-11-12T22:48:13.9357742Z #13 sha256:86781d25d3989ead8f09c45716da0159c1dd0be2c753a51f15b6c60f4b9a97db 18.87MB / 57.42MB 0.3s
+deploy	Upload verified source and deploy	2026-11-12T22:48:14.0868815Z #13 sha256:86781d25d3989ead8f09c45716da0159c1dd0be2c753a51f15b6c60f4b9a97db 31.46MB / 57.42MB 0.5s
+deploy	Upload verified source and deploy	2026-11-12T22:48:14.2329790Z #13 sha256:86781d25d3989ead8f09c45716da0159c1dd0be2c753a51f15b6c60f4b9a97db 48.23MB / 57.42MB 0.6s
+deploy	Upload verified source and deploy	2026-11-12T22:48:14.3756103Z #13 sha256:86781d25d3989ead8f09c45716da0159c1dd0be2c753a51f15b6c60f4b9a97db 57.42MB / 57.42MB 0.8s
+deploy	Upload verified source and deploy	2026-11-12T22:48:15.3859170Z #13 sha256:86781d25d3989ead8f09c45716da0159c1dd0be2c753a51f15b6c60f4b9a97db 57.42MB / 57.42MB 1.7s done
+deploy	Upload verified source and deploy	2026-11-12T22:48:15.3860010Z #13 extracting sha256:86781d25d3989ead8f09c45716da0159c1dd0be2c753a51f15b6c60f4b9a97db
+deploy	Upload verified source and deploy	2026-11-12T22:48:18.1038564Z #13 extracting sha256:86781d25d3989ead8f09c45716da0159c1dd0be2c753a51f15b6c60f4b9a97db 2.7s done
+deploy	Upload verified source and deploy	2026-11-12T22:48:18.1039426Z #13 DONE 4.9s
+deploy	Upload verified source and deploy	2026-11-12T22:48:18.2260104Z 
+deploy	Upload verified source and deploy	2026-11-12T22:48:18.2261492Z #13 [app build 1/6] FROM docker.io/library/node:24-alpine@sha256:116b800c3754b440ee0aa3ed2f20f5bf3d99a554bfd9adeea09ea8017f6e85f5
+deploy	Upload verified source and deploy	2026-11-12T22:48:18.2262486Z #13 extracting sha256:7eb569707982863466c2b0bcfddda86fb4842fccfaec088d1354f6a29e2856bb 0.1s done
+deploy	Upload verified source and deploy	2026-11-12T22:48:18.2263094Z #13 DONE 5.0s
+deploy	Upload verified source and deploy	2026-11-12T22:48:18.4390952Z 
+deploy	Upload verified source and deploy	2026-11-12T22:48:18.4392247Z #13 [app build 1/6] FROM docker.io/library/node:24-alpine@sha256:116b800c3754b440ee0aa3ed2f20f5bf3d99a554bfd9adeea09ea8017f6e85f5
+deploy	Upload verified source and deploy	2026-11-12T22:48:18.4393573Z #13 extracting sha256:7bb632bc9bd793a348866a7dd7920cf89dfc87205c6d38cda182ea6d8065b8e5 0.1s done
+deploy	Upload verified source and deploy	2026-11-12T22:48:18.4394719Z #13 DONE 5.1s
+deploy	Upload verified source and deploy	2026-11-12T22:48:18.4394956Z 
+deploy	Upload verified source and deploy	2026-11-12T22:48:18.4395127Z #14 [app build 2/6] WORKDIR /app
+deploy	Upload verified source and deploy	2026-11-12T22:48:20.4112776Z #14 DONE 2.1s
+deploy	Upload verified source and deploy	2026-11-12T22:48:20.5569860Z 
+deploy	Upload verified source and deploy	2026-11-12T22:48:20.5571860Z #15 [app build 3/6] COPY package*.json ./
+deploy	Upload verified source and deploy	2026-11-12T22:48:20.5572470Z #15 DONE 0.1s
+deploy	Upload verified source and deploy	2026-11-12T22:48:20.7153919Z 
+deploy	Upload verified source and deploy	2026-11-12T22:48:20.7154795Z #16 [app stage-1 4/6] RUN npm ci --omit=dev && npm cache clean --force
+deploy	Upload verified source and deploy	2026-11-12T22:48:28.1952405Z #16 7.616 
+deploy	Upload verified source and deploy	2026-11-12T22:48:28.1952873Z #16 7.616 added 74 packages, and audited 75 packages in 7s
+deploy	Upload verified source and deploy	2026-11-12T22:48:28.1953805Z #16 7.616 
+deploy	Upload verified source and deploy	2026-11-12T22:48:28.1954106Z #16 7.616 33 packages are looking for funding
+deploy	Upload verified source and deploy	2026-11-12T22:48:28.1954836Z #16 7.616   run `npm fund` for details
+deploy	Upload verified source and deploy	2026-11-12T22:48:28.1955183Z #16 7.616 
+deploy	Upload verified source and deploy	2026-11-12T22:48:28.1955445Z #16 7.616 found 0 vulnerabilities
+deploy	Upload verified source and deploy	2026-11-12T22:48:28.3458455Z #16 7.630 npm notice
+deploy	Upload verified source and deploy	2026-11-12T22:48:28.3459087Z #16 7.630 npm notice New major version of npm available! 11.19.1 -> 12.2.2
+deploy	Upload verified source and deploy	2026-11-12T22:48:28.3459846Z #16 7.630 npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2
+deploy	Upload verified source and deploy	2026-11-12T22:48:28.3460515Z #16 7.630 npm notice To update run: npm install -g npm@12.2.2
+deploy	Upload verified source and deploy	2026-11-12T22:48:28.3460979Z #16 7.630 npm notice
+deploy	Upload verified source and deploy	2026-11-12T22:48:28.7250266Z #16 8.160 npm warn using --force Recommended protections disabled.
+deploy	Upload verified source and deploy	2026-11-12T22:48:30.1452843Z #16 ...
+deploy	Upload verified source and deploy	2026-11-12T22:48:30.1453194Z 
+deploy	Upload verified source and deploy	2026-11-12T22:48:30.1453355Z #17 [app build 4/6] RUN npm ci
+deploy	Upload verified source and deploy	2026-11-12T22:48:30.1453744Z #17 9.421 
+deploy	Upload verified source and deploy	2026-11-12T22:48:30.1454144Z #17 9.421 added 108 packages, and audited 109 packages in 8s
+deploy	Upload verified source and deploy	2026-11-12T22:48:30.1455016Z #17 9.422 
+deploy	Upload verified source and deploy	2026-11-12T22:48:30.1455368Z #17 9.423 42 packages are looking for funding
+deploy	Upload verified source and deploy	2026-11-12T22:48:30.1455824Z #17 9.423   run `npm fund` for details
+deploy	Upload verified source and deploy	2026-11-12T22:48:30.1456205Z #17 9.426 
+deploy	Upload verified source and deploy	2026-11-12T22:48:30.1456506Z #17 9.426 found 0 vulnerabilities
+deploy	Upload verified source and deploy	2026-11-12T22:48:30.1457142Z #17 9.428 npm warn install-scripts 1 package has install scripts not yet covered by allowScripts:
+deploy	Upload verified source and deploy	2026-11-12T22:48:30.1457969Z #17 9.428 npm warn install-scripts   esbuild@0.28.2 (postinstall: node install.js)
+deploy	Upload verified source and deploy	2026-11-12T22:48:30.1458553Z #17 9.428 npm warn install-scripts
+deploy	Upload verified source and deploy	2026-11-12T22:48:30.1459350Z #17 9.428 npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+deploy	Upload verified source and deploy	2026-11-12T22:48:30.1460128Z #17 9.431 npm notice
+deploy	Upload verified source and deploy	2026-11-12T22:48:30.1460591Z #17 9.431 npm notice New major version of npm available! 11.19.1 -> 12.2.2
+deploy	Upload verified source and deploy	2026-11-12T22:48:30.1461354Z #17 9.431 npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2
+deploy	Upload verified source and deploy	2026-11-12T22:48:30.1462124Z #17 9.431 npm notice To update run: npm install -g npm@12.2.2
+deploy	Upload verified source and deploy	2026-11-12T22:48:30.1462570Z #17 9.431 npm notice
+deploy	Upload verified source and deploy	2026-11-12T22:48:31.2304833Z #17 ...
+deploy	Upload verified source and deploy	2026-11-12T22:48:31.2305336Z 
+deploy	Upload verified source and deploy	2026-11-12T22:48:31.2305632Z #16 [app stage-1 4/6] RUN npm ci --omit=dev && npm cache clean --force
+deploy	Upload verified source and deploy	2026-11-12T22:48:31.2306139Z #16 DONE 10.7s
+deploy	Upload verified source and deploy	2026-11-12T22:48:31.4635884Z 
+deploy	Upload verified source and deploy	2026-11-12T22:48:31.4636554Z #17 [app build 4/6] RUN npm ci
+deploy	Upload verified source and deploy	2026-11-12T22:48:31.4637366Z #17 DONE 10.7s
+deploy	Upload verified source and deploy	2026-11-12T22:48:31.4637738Z 
+deploy	Upload verified source and deploy	2026-11-12T22:48:31.4637983Z #18 [app build 5/6] COPY client ./client
+deploy	Upload verified source and deploy	2026-11-12T22:48:31.9523654Z #18 ...
+deploy	Upload verified source and deploy	2026-11-12T22:48:31.9524038Z 
+deploy	Upload verified source and deploy	2026-11-12T22:48:31.9524571Z #19 [app stage-1 5/6] COPY server ./server
+deploy	Upload verified source and deploy	2026-11-12T22:48:31.9525294Z #19 DONE 0.7s
+deploy	Upload verified source and deploy	2026-11-12T22:48:32.1408992Z 
+deploy	Upload verified source and deploy	2026-11-12T22:48:32.1409799Z #18 [app build 5/6] COPY client ./client
+deploy	Upload verified source and deploy	2026-11-12T22:48:32.1410789Z #18 DONE 0.7s
+deploy	Upload verified source and deploy	2026-11-12T22:48:32.1410962Z 
+deploy	Upload verified source and deploy	2026-11-12T22:48:32.1411109Z #20 [app build 6/6] RUN npm run build
+deploy	Upload verified source and deploy	2026-11-12T22:48:32.5730691Z #20 0.583 
+deploy	Upload verified source and deploy	2026-11-12T22:48:32.5731301Z #20 0.583 > ***@1.0.0 build
+deploy	Upload verified source and deploy	2026-11-12T22:48:32.5731759Z #20 0.583 > vite build --config client/vite.config.js
+deploy	Upload verified source and deploy	2026-11-12T22:48:32.5732195Z #20 0.583 
+deploy	Upload verified source and deploy	2026-11-12T22:48:32.9657188Z #20 0.975 vite v7.3.8 building client environment for production...
+deploy	Upload verified source and deploy	2026-11-12T22:48:33.0898279Z #20 1.100 transforming...
+deploy	Upload verified source and deploy	2026-11-12T22:48:35.2461487Z #20 3.256 ✓ 23 modules transformed.
+deploy	Upload verified source and deploy	2026-11-12T22:48:35.6748519Z #20 3.684 rendering chunks...
+deploy	Upload verified source and deploy	2026-11-12T22:48:35.8678148Z #20 3.701 computing gzip size...
+deploy	Upload verified source and deploy	2026-11-12T22:48:35.8679223Z #20 3.725 ../dist/index.html                   0.38 kB │ gzip:  0.28 kB
+deploy	Upload verified source and deploy	2026-11-12T22:48:35.8679993Z #20 3.726 ../dist/assets/index-BZpkwoxN.css    4.37 kB │ gzip:  1.53 kB
+deploy	Upload verified source and deploy	2026-11-12T22:48:35.8680683Z #20 3.726 ../dist/assets/index-DQsQ4Kn1.js   230.12 kB │ gzip: 71.82 kB
+deploy	Upload verified source and deploy	2026-11-12T22:48:35.8681255Z #20 3.727 ✓ built in 2.70s
+deploy	Upload verified source and deploy	2026-11-12T22:48:35.8681589Z #20 DONE 3.9s
+deploy	Upload verified source and deploy	2026-11-12T22:48:36.0070875Z 
+deploy	Upload verified source and deploy	2026-11-12T22:48:36.0071524Z #21 [app stage-1 6/6] COPY --from=build /app/dist ./dist
+deploy	Upload verified source and deploy	2026-11-12T22:48:36.2266032Z #21 DONE 0.2s
+deploy	Upload verified source and deploy	2026-11-12T22:48:36.4127969Z 
+deploy	Upload verified source and deploy	2026-11-12T22:48:36.4128502Z #22 [app] exporting to image
+deploy	Upload verified source and deploy	2026-11-12T22:48:36.4128956Z #22 exporting layers
+deploy	Upload verified source and deploy	2026-11-12T22:48:39.3759651Z #22 exporting layers 3.1s done
+deploy	Upload verified source and deploy	2026-11-12T22:48:39.3760783Z #22 exporting manifest sha256:c413adffb2c8f8f3ad2e778acd8bbb030e96228f47cf4b40546c71a12ea402cb
+deploy	Upload verified source and deploy	2026-11-12T22:48:39.5187088Z #22 exporting manifest sha256:c413adffb2c8f8f3ad2e778acd8bbb030e96228f47cf4b40546c71a12ea402cb 0.0s done
+deploy	Upload verified source and deploy	2026-11-12T22:48:39.5188665Z #22 exporting config sha256:b5aa172e93d3545a8b5121a54c436295ea22258e3fdfd838333bf980aba3b34f 0.1s done
+deploy	Upload verified source and deploy	2026-11-12T22:48:39.5189863Z #22 exporting attestation manifest sha256:27c179e9bb07b604c43a3eaf16405ef5d44ed414aee4356a6cc107854b61357d
+deploy	Upload verified source and deploy	2026-11-12T22:48:39.6672088Z #22 exporting attestation manifest sha256:27c179e9bb07b604c43a3eaf16405ef5d44ed414aee4356a6cc107854b61357d 0.1s done
+deploy	Upload verified source and deploy	2026-11-12T22:48:39.6673337Z #22 exporting manifest list sha256:01f21d2936a43883c02fb58b58b8906bdbcb975d34f77318425742718e8c0ee1 0.1s done
+deploy	Upload verified source and deploy	2026-11-12T22:48:39.6674626Z #22 naming to docker.io/library/***-app:latest
+deploy	Upload verified source and deploy	2026-11-12T22:48:39.8295847Z #22 naming to docker.io/library/***-app:latest 0.0s done
+deploy	Upload verified source and deploy	2026-11-12T22:48:39.8296878Z #22 unpacking to docker.io/library/***-app:latest
+deploy	Upload verified source and deploy	2026-11-12T22:48:40.4663130Z #22 unpacking to docker.io/library/***-app:latest 0.8s done
+deploy	Upload verified source and deploy	2026-11-12T22:48:40.6529953Z #22 DONE 4.2s
+deploy	Upload verified source and deploy	2026-11-12T22:48:40.7963082Z 
+deploy	Upload verified source and deploy	2026-11-12T22:48:40.7963885Z #23 [app] resolving provenance for metadata file
+deploy	Upload verified source and deploy	2026-11-12T22:48:40.8193766Z  app  Built
+deploy	Upload verified source and deploy	2026-11-12T22:48:40.8194559Z #23 DONE 0.0s
+deploy	Upload verified source and deploy	2026-11-12T22:48:40.8194982Z  couchdb  Built
+deploy	Upload verified source and deploy	2026-11-12T22:48:40.8226524Z  Network ***_default  Creating
+deploy	Upload verified source and deploy	2026-11-12T22:48:40.9388944Z  Network ***_default  Created
+deploy	Upload verified source and deploy	2026-11-12T22:48:40.9409464Z  Volume ***_caddyconfig  Creating
+deploy	Upload verified source and deploy	2026-11-12T22:48:40.9506148Z  Volume ***_caddyconfig  Created
+deploy	Upload verified source and deploy	2026-11-12T22:48:40.9510372Z  Volume ***_couchdata  Creating
+deploy	Upload verified source and deploy	2026-11-12T22:48:40.9590634Z  Volume ***_couchdata  Created
+deploy	Upload verified source and deploy	2026-11-12T22:48:40.9597364Z  Volume ***_caddydata  Creating
+deploy	Upload verified source and deploy	2026-11-12T22:48:40.9748475Z  Volume ***_caddydata  Created
+deploy	Upload verified source and deploy	2026-11-12T22:48:40.9754700Z  Container ***-couchdb-1  Creating
+deploy	Upload verified source and deploy	2026-11-12T22:48:41.7081074Z  Container ***-couchdb-1  Created
+deploy	Upload verified source and deploy	2026-11-12T22:48:41.7104535Z  Container ***-app-1  Creating
+deploy	Upload verified source and deploy	2026-11-12T22:48:41.8803992Z  Container ***-app-1  Created
+deploy	Upload verified source and deploy	2026-11-12T22:48:41.8805081Z  Container ***-caddy-1  Creating
+deploy	Upload verified source and deploy	2026-11-12T22:48:42.0395444Z  Container ***-caddy-1  Created
+deploy	Upload verified source and deploy	2026-11-12T22:48:42.0808189Z  Container ***-couchdb-1  Starting
+deploy	Upload verified source and deploy	2026-11-12T22:48:42.4411047Z  Container ***-couchdb-1  Started
+deploy	Upload verified source and deploy	2026-11-12T22:48:42.4411769Z  Container ***-couchdb-1  Waiting
+deploy	Upload verified source and deploy	2026-11-12T22:48:47.9424187Z  Container ***-couchdb-1  Healthy
+deploy	Upload verified source and deploy	2026-11-12T22:48:47.9425078Z  Container ***-app-1  Starting
+deploy	Upload verified source and deploy	2026-11-12T22:48:48.2537737Z  Container ***-app-1  Started
+deploy	Upload verified source and deploy	2026-11-12T22:48:48.2538201Z  Container ***-caddy-1  Starting
+deploy	Upload verified source and deploy	2026-11-12T22:48:48.8261650Z  Container ***-caddy-1  Started
+deploy	Upload verified source and deploy	2026-11-12T22:48:48.8262270Z  Container ***-caddy-1  Waiting
+deploy	Upload verified source and deploy	2026-11-12T22:48:48.8265922Z  Container ***-couchdb-1  Waiting
+deploy	Upload verified source and deploy	2026-11-12T22:48:48.8266378Z  Container ***-app-1  Waiting
+deploy	Upload verified source and deploy	2026-11-12T22:48:49.3309462Z  Container ***-caddy-1  Healthy
+deploy	Upload verified source and deploy	2026-11-12T22:48:49.3326733Z  Container ***-couchdb-1  Healthy
+deploy	Upload verified source and deploy	2026-11-12T22:48:53.8288654Z  Container ***-app-1  Healthy
+deploy	Post Run actions/checkout@v4	﻿2026-11-12T22:48:53.8480299Z Post job cleanup.
+deploy	Post Run actions/checkout@v4	2026-11-12T22:48:53.9414218Z [command]/usr/bin/git version
+deploy	Post Run actions/checkout@v4	2026-11-12T22:48:53.9463778Z git version 2.56.0
+deploy	Post Run actions/checkout@v4	2026-11-12T22:48:53.9509464Z Temporarily overriding HOME='/home/runner/work/_temp/cfe289f5-04a6-4cb3-8d9f-cd7dda1ca48a' before making global git config changes
+deploy	Post Run actions/checkout@v4	2026-11-12T22:48:53.9511426Z Adding repository directory to the temporary git global config as a safe directory
+deploy	Post Run actions/checkout@v4	2026-11-12T22:48:53.9515523Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/TechInventory/TechInventory
+deploy	Post Run actions/checkout@v4	2026-11-12T22:48:53.9559947Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+deploy	Post Run actions/checkout@v4	2026-11-12T22:48:53.9599893Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+deploy	Post Run actions/checkout@v4	2026-11-12T22:48:53.9865566Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+deploy	Post Run actions/checkout@v4	2026-11-12T22:48:53.9905618Z http.https://github.com/.extraheader
+deploy	Post Run actions/checkout@v4	2026-11-12T22:48:53.9927606Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+deploy	Post Run actions/checkout@v4	2026-11-12T22:48:53.9962703Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+deploy	Post Run actions/checkout@v4	2026-11-12T22:48:54.0248630Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+deploy	Post Run actions/checkout@v4	2026-11-12T22:48:54.0296184Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+deploy	Complete job	﻿2026-11-12T22:48:54.0784943Z Cleaning up orphan processes
+deploy	Complete job	2026-11-12T22:48:54.1286574Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

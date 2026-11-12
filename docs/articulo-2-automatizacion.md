@@ -6,6 +6,8 @@ tags: devops, docker, githubactions, node
 
 # Del repositorio a HTTPS: automatizar TechInventory sin perder los datos de CouchDB
 
+Autora: Gabriela Cohaila
+
 Una aplicación puede funcionar en la computadora y aun así fallar al publicarse. En TechInventory, el requisito de usar Apache CouchDB añade una condición: los documentos deben sobrevivir al reinicio y al reemplazo de los contenedores. Por eso la elección del alojamiento depende de la persistencia, además del precio.
 
 El proyecto combina React/Vite, Node/Express y CouchDB. Este artículo se concentra en cómo construir, verificar y preparar su publicación automatizada, y en distinguir una configuración disponible de un despliegue realmente observado.
@@ -64,4 +66,12 @@ Automatizar no elimina la necesidad de revisar el resultado. Reduce pasos repeti
 - [Volúmenes Docker](https://docs.docker.com/engine/storage/volumes/)
 - [HTTPS automático de Caddy](https://caddyserver.com/docs/automatic-https)
 
-Nota editorial: preparado para el integrante que explique automatización y alojamiento. Antes de publicar, revisar nombre de autor y sustituir descripciones de pasos pendientes por la evidencia obtenida, sin inventar enlaces.
+## Resultado verificado de la demostración
+
+El 12/11/2026 se publicó TechInventory con HTTPS en una VM Ubuntu de Azure for Students. El [despliegue automático #4](https://github.com/CodexVex/TechInventory/actions/runs/43323181513) terminó correctamente. También se ejecutó CRUD real desde la URL HTTPS y se comprobó que `asset:LT-DEMO` conservaba su identificador y revisión después de reiniciar Express y CouchDB. Los registros y capturas están en [evidence](https://github.com/CodexVex/TechInventory/tree/main/evidence).
+
+![Inventario real publicado por HTTPS](https://raw.githubusercontent.com/CodexVex/TechInventory/main/evidence/06-inventario-completo.jpg)
+
+![Despliegue automático exitoso](https://raw.githubusercontent.com/CodexVex/TechInventory/main/evidence/04-cd-exitoso.jpg)
+
+La URL utilizada fue `https://techinventory-codexvex-20261112.eastus.cloudapp.azure.com`. El alojamiento es temporal: se retira después de recopilar las evidencias para evitar consumo continuo de créditos. Esa dirección no debe considerarse un servicio permanente. El repositorio y los registros de Actions permiten revisar la construcción y el despliegue aunque el servidor se haya retirado.

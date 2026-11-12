@@ -1,0 +1,26 @@
+[
+  {
+    "name": "vm-techinventoryVNET",
+    "type": "Microsoft.Network/virtualNetworks"
+  },
+  {
+    "name": "vm-techinventoryPublicIP",
+    "type": "Microsoft.Network/publicIPAddresses"
+  },
+  {
+    "name": "vm-techinventoryNSG",
+    "type": "Microsoft.Network/networkSecurityGroups"
+  },
+  {
+    "name": "vm-techinventoryVMNic",
+    "type": "Microsoft.Network/networkInterfaces"
+  },
+  {
+    "name": "vm-techinventory",
+    "type": "Microsoft.Compute/virtualMachines"
+  },
+  {
+    "name": "vm-techinventory_OsDisk_1_dce131234ed6415bb348eed84745111f",
+    "type": "Microsoft.Compute/disks"
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "verifiedAt": "2026-11-12T22:50:31.850Z",
+  "sameId": true,
+  "sameRevision": true,
+  "document": {
+    "_id": "asset:LT-DEMO",
+    "_rev": "1-23b8ffab0a146ef4325f8744557118bd",
+    "code": "LT-DEMO",
+    "name": "Laptop de laboratorio",
+    "category": "Laptop",
+    "location": "Laboratorio A",
+    "responsible": "Equipo Alfa",
+    "status": "Disponible",
+    "notes": "Datos ficticios para demostración académica",
+    "type": "asset",
+    "createdAt": "2026-11-12T22:49:38.048Z",
+    "updatedAt": "2026-11-12T22:49:38.048Z",
+    "updatedBy": "admin"
+  }
+}
