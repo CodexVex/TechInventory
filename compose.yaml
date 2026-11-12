@@ -9,6 +9,7 @@ services:
       - ./couchdb.ini:/opt/couchdb/etc/local.d/single-node.ini:ro
     healthcheck:
       test: [CMD, curl, -fsS, http://localhost:5984/_up]
+      start_period: 30s
       interval: 5s
       timeout: 3s
       retries: 30
