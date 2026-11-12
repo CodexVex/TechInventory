@@ -1,0 +1,27 @@
+{
+  "name": "techinventory",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --env-file=.env server/index.js",
+    "build": "vite build --config client/vite.config.js",
+    "start": "node server/index.js",
+    "test": "node --test tests/*.test.js",
+    "test:integration": "node --env-file=.env --test tests/integration.js",
+    "setup": "node scripts/setup.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "express-rate-limit": "^8.0.0",
+    "cookie-parser": "^1.4.7",
+    "zod": "^4.0.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "vite": "^7.0.0",
+    "supertest": "^7.1.0"
+  }
+}

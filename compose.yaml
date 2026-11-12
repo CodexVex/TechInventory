@@ -1,0 +1,34 @@
+services:
+  couchdb:
+    image: couchdb:3.5.0
+    environment:
+      COUCHDB_USER: ${COUCHDB_USER:?Run npm run setup}
+      COUCHDB_PASSWORD: ${COUCHDB_PASSWORD:?Run npm run setup}
+    volumes:
+      - couchdata:/opt/couchdb/data
+      - ./couchdb.ini:/opt/couchdb/etc/local.d/single-node.ini:ro
+    healthcheck:
+      test: [CMD, curl, -fsS, http://localhost:5984/_up]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+    restart: unless-stopped
+  app:
+    build: .
+    ports:
+      - "127.0.0.1:3000:3000"
+    environment:
+      NODE_ENV: ${NODE_ENV:-development}
+      COUCHDB_URL: http://${COUCHDB_USER}:${COUCHDB_PASSWORD}@couchdb:5984
+      SESSION_SECRET: ${SESSION_SECRET:?Run setup}
+      ADMIN_USER: ${ADMIN_USER}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD}
+      VIEWER_USER: ${VIEWER_USER}
+      VIEWER_PASSWORD: ${VIEWER_PASSWORD}
+      APP_ORIGIN: ${APP_ORIGIN:-http://localhost:3000}
+    depends_on:
+      couchdb:
+        condition: service_healthy
+    restart: unless-stopped
+volumes:
+  couchdata:
