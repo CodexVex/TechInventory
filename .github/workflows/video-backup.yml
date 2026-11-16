@@ -18,6 +18,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: CodexVex/TechInventory
         run: gh run download 43811669503 --name backup-restore-evidence --dir evidence/backup
+      - run: sudo apt-get update -qq && sudo apt-get install -y ffmpeg
       - run: pip install pillow edge-tts
       - name: Render narrated video and validate audio and duration
         run: |
