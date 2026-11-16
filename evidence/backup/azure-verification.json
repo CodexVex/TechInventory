@@ -1,0 +1,67 @@
+{
+  "description": "Transcripción de resultados observados en Azure Run Command y Azure CLI durante la demostración del 16/11/2026.",
+  "hosting": {
+    "provider": "Azure for Students",
+    "resourceGroup": "rg-techinventory-backup-20261116",
+    "domain": "tibackup11160540.eastus.cloudapp.azure.com",
+    "health": {
+      "status": "ok",
+      "database": "Apache CouchDB"
+    },
+    "temporary": true
+  },
+  "before": {
+    "documentCount": 3,
+    "assets": [
+      {
+        "id": "asset:BACKUP-AZURE",
+        "rev": "1-ce8b59ba950acb934fac035f3247a0b0"
+      }
+    ],
+    "documentsSha256": "fdf618d16abb7d809a5b04ab95312d70da73bfbcad90d6f362e52ddbc0fba47c",
+    "securitySha256": "d1a74dc2f8fae07fc3ace505c061b2a534a54943bdf73045bc7dbc5b8d0764b7"
+  },
+  "result": {
+    "status": "PASS",
+    "isolatedRestore": true,
+    "documentsAndRevisionsMatch": true,
+    "securityMatches": true,
+    "restoreSeconds": 6,
+    "completedAt": "2026-11-16T05:54:00Z"
+  },
+  "blob": {
+    "account": "tibackup11160540",
+    "container": "backups",
+    "objects": [
+      {
+        "name": "techinventory-20261116T055351Z.tar.gz.gpg",
+        "bytes": 24897
+      },
+      {
+        "name": "techinventory-20261116T055351Z.tar.gz.gpg.sha256",
+        "bytes": 108
+      }
+    ],
+    "downloadedToCloudShell": true,
+    "sha256Verification": "OK",
+    "allowBlobPublicAccess": false,
+    "httpsOnly": true,
+    "minimumTlsVersion": "TLS1_2"
+  },
+  "limitations": [
+    "El ensayo restaura el archivo local cifrado; la descarga desde Blob se verificó aparte mediante SHA-256.",
+    "Los tiempos son de un inventario sintético pequeño y no representan un RTO de producción.",
+    "No se afirma una política diaria de producción ni una retención de semanas ya ejecutada."
+  ],
+  "restored": {
+    "documentCount": 3,
+    "assets": [
+      {
+        "id": "asset:BACKUP-AZURE",
+        "rev": "1-ce8b59ba950acb934fac035f3247a0b0"
+      }
+    ],
+    "documentsSha256": "fdf618d16abb7d809a5b04ab95312d70da73bfbcad90d6f362e52ddbc0fba47c",
+    "securitySha256": "d1a74dc2f8fae07fc3ace505c061b2a534a54943bdf73045bc7dbc5b8d0764b7"
+  }
+}
