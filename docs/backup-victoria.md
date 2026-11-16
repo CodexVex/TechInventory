@@ -14,7 +14,7 @@ El resultado de esta etapa es un procedimiento reproducible de **copia física c
 - [Script de respaldo y restauración: backup.sh](https://github.com/CodexVex/TechInventory/blob/main/backup.sh).
 - [Prueba de recuperación exitosa del 16/11/2026](https://github.com/CodexVex/TechInventory/actions/runs/43811669503).
 - [CI de aplicación exitoso](https://github.com/CodexVex/TechInventory/actions/runs/43811669548).
-- [Construcción del video narrado: 182,44 segundos y pista de audio verificada](https://github.com/CodexVex/TechInventory/actions/runs/43812440607).
+- [Video público en YouTube con narración femenina (3:03)](https://youtu.be/WoP5EkxuhcY).
 
 ## Un volumen y una revisión resuelven problemas distintos
 
@@ -86,7 +86,7 @@ El alojamiento es temporal y se retira después de conservar las evidencias para
 
 ## Video con voz femenina
 
-La explicación se generó con narración sintética femenina en español de Perú y una duración aproximada de **tres minutos**, inferior al límite de cinco. Están disponibles el [MP4 y sus archivos de validación](https://github.com/CodexVex/TechInventory/releases/tag/nosql-backup-demo-20261116). La publicación del MP4 en una red social de video se incorpora por separado; una descarga de GitHub no sustituye ese requisito de la entrega.
+La explicación se generó con narración sintética femenina en español de Perú y una duración aproximada de **tres minutos**, inferior al límite de cinco. Están disponibles el [MP4 y sus archivos de validación](https://github.com/CodexVex/TechInventory/releases/tag/nosql-backup-demo-20261116). El video ya está publicado en [YouTube: TechInventory - NoSQL Backup Strategy](https://youtu.be/WoP5EkxuhcY), con una duración aproximada de 3:03.
 
 ## Frecuencia, retención y límites
 
