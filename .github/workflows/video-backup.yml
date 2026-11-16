@@ -5,7 +5,7 @@ on:
     paths: ['.github/workflows/video-backup.yml']
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
   actions: read
 jobs:
   video:
@@ -76,3 +76,10 @@ jobs:
             video-output/narracion.txt
             video-output/slide-*.png
           retention-days: 30
+      - name: Publish downloadable narrated video
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: CodexVex/TechInventory
+        run: |
+          gh release view nosql-backup-demo-20261116 >/dev/null 2>&1 || gh release create nosql-backup-demo-20261116 --title "TechInventory: NoSQL Backup Strategy" --notes "Demostración narrada en español con voz femenina sintética. Video inferior a cinco minutos. Incluye validación y guion."
+          gh release upload nosql-backup-demo-20261116 video-output/TechInventory_NoSQL_Backup.mp4 video-output/video-validation.json video-output/narracion.txt --clobber
