@@ -1,0 +1,77 @@
+name: Narrated backup video
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/video-backup.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  video:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download verified restore evidence
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: CodexVex/TechInventory
+        run: gh run download 43811669503 --name backup-restore-evidence --dir evidence/backup
+      - run: pip install pillow edge-tts
+      - name: Render narrated video and validate audio and duration
+        run: |
+          python3 - <<'PY'
+          import asyncio,json,subprocess,textwrap,pathlib
+          import edge_tts
+          from PIL import Image,ImageDraw,ImageFont
+          p=pathlib.Path('video-output');p.mkdir(exist_ok=True)
+          result=json.loads(pathlib.Path('evidence/backup/result.json').read_text())
+          assert result['status']=='PASS'
+          scenes=[
+          ('TechInventory','Estrategia NoSQL de respaldo y recuperación', 'Victoria Lavarello Vidaurre y Gabriela Cohaila. En esta continuación de TechInventory presentamos una estrategia de respaldo para Apache Couch DB. La aplicación usa React y Express para gestionar equipos. Ahora el objetivo es conservar una copia independiente y demostrar que podemos recuperarla. El repositorio es público y contiene tanto la aplicación como el procedimiento reproducible. La narración de este video utiliza una voz femenina sintética.', 'React + Express + Apache CouchDB\nRepositorio: CodexVex/TechInventory\nContinuación: NoSQL Backup Strategy'),
+          ('Por qué respaldar','Persistencia, revisiones y recuperación', 'Un volumen de Docker conserva datos cuando reiniciamos un contenedor, pero puede perderse junto con la máquina. La revisión de un documento evita sobrescribir cambios concurrentes; tampoco sustituye un respaldo. Elegimos una copia física completa para este laboratorio de un solo nodo. Pausamos la aplicación, obtenemos una referencia verificable y detenemos Couch DB para copiar sus archivos sin nuevas escrituras.', 'Volumen persistente: reinicios\n_rev: concurrencia\nBackup separado: recuperación'),
+          ('Construcción de la copia','Archivos, configuración y cifrado', 'El script backup punto sh copia el volumen de datos y la configuración de Couch DB. También incorpora las variables necesarias para reconstruir la aplicación. Como ese paquete contiene secretos, se cifra con Gnu PG y AES de doscientos cincuenta y seis bits. La contraseña de cifrado permanece fuera del repositorio. Después calculamos SHA doscientos cincuenta y seis sobre el archivo cifrado para comprobar su integridad. La aplicación se reinicia antes de transferir la copia.', 'docker compose stop app couchdb\ntar: data + etc + app.env\ngpg --symmetric --cipher-algo AES256\nsha256sum archivo.tar.gz.gpg'),
+          ('Destino externo','Azure Blob privado y alojamiento temporal', 'El destino previsto para la copia externa es un contenedor privado de Azure Blob. El script permite transferir el archivo cifrado y su suma de comprobación mediante HTTPS y una autorización temporal. La base de datos permanece dentro de la red de Docker, sin publicar su puerto. El alojamiento de la aplicación se construye con Docker Compose y Caddy sobre Azure. Esta infraestructura académica es temporal para controlar el consumo de créditos.', 'VM: aplicación + CouchDB\nBlob privado: archivo cifrado + SHA256\nHTTPS y autorización temporal\n5984 sin exposición pública'),
+          ('Restauración comprobada','Resultado real de GitHub Actions', 'La comprobación decisiva consiste en restaurar. Verificamos la suma del archivo, lo desciframos y cargamos sus datos en un volumen nuevo y una red separada. Usamos la misma imagen de Couch DB. Después comparamos el número de documentos, sus identificadores, las revisiones y los hashes del contenido y de los permisos. La ejecución pública de GitHub Actions terminó correctamente. El panel muestra el resultado generado por la prueba, no una respuesta simulada.', json.dumps(result,ensure_ascii=False,indent=2)),
+          ('Alcance y continuidad','Una copia útil debe poder restaurarse', 'Esta prueba demuestra una recuperación física en un entorno aislado. El tiempo medido corresponde al ensayo pequeño y no garantiza un tiempo de recuperación en producción. La pérdida máxima posible depende del último respaldo válido. Para operación continua se debe programar la frecuencia, conservar varias versiones, proteger la clave y ensayar la restauración desde el destino externo. Una replicación que transmite borrados no reemplaza ese historial. El artículo, el código y las evidencias permiten revisar el procedimiento.', 'Laboratorio: copia automática y restauración aislada\nProducción: frecuencia, retención y custodia de clave\nEvidencia: Actions + JSON antes/después')]
+          font='/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'
+          def drawtext(d,xy,value,size,color,width):
+           y=xy[1];f=ImageFont.truetype(font,size)
+           for paragraph in value.split('\n'):
+            for line in textwrap.wrap(paragraph,width=width) or ['']:
+             d.text((xy[0],y),line,font=f,fill=color);y+=size+13
+           return y
+          async def main():
+           for i,(title,sub,narration,panel) in enumerate(scenes):
+            await edge_tts.Communicate(narration,'es-PE-CamilaNeural',rate='+3%').save(str(p/f'voice-{i}.mp3'))
+            im=Image.new('RGB',(1280,720),'#091923');d=ImageDraw.Draw(im)
+            d.rectangle((55,45,120,51),fill='#54d9b0')
+            drawtext(d,(140,31),'TECHINVENTORY / NOSQL BACKUP',18,'#90aebd',70)
+            drawtext(d,(55,95),title,46,'#ffffff',42)
+            drawtext(d,(55,165),sub,25,'#54d9b0',70)
+            d.rounded_rectangle((55,230,1225,585),radius=18,fill='#112c39')
+            drawtext(d,(85,255),panel,23,'#e5f3f6',76)
+            drawtext(d,(55,625),f'{i+1:02d} / 06   Victoria Lavarello Vidaurre · Gabriela Cohaila',19,'#90aebd',95)
+            drawtext(d,(55,665),'Narración sintética femenina · Código y evidencias públicos',16,'#90aebd',100)
+            im.save(p/f'slide-{i}.png')
+            subprocess.run(['ffmpeg','-y','-loglevel','error','-loop','1','-i',str(p/f'slide-{i}.png'),'-i',str(p/f'voice-{i}.mp3'),'-c:v','libx264','-preset','fast','-tune','stillimage','-r','10','-c:a','aac','-b:a','128k','-pix_fmt','yuv420p','-shortest',str(p/f'scene-{i}.mp4')],check=True)
+           (p/'concat.txt').write_text(''.join(f"file 'scene-{i}.mp4'\n" for i in range(len(scenes))))
+           subprocess.run(['ffmpeg','-y','-loglevel','error','-f','concat','-safe','0','-i',str(p/'concat.txt'),'-c','copy','-movflags','+faststart',str(p/'TechInventory_NoSQL_Backup.mp4')],check=True)
+           probe=json.loads(subprocess.check_output(['ffprobe','-v','quiet','-show_format','-show_streams','-of','json',str(p/'TechInventory_NoSQL_Backup.mp4')]))
+           assert float(probe['format']['duration'])<300
+           assert any(s['codec_type']=='audio' for s in probe['streams'])
+           (p/'video-validation.json').write_text(json.dumps(probe,indent=2))
+           (p/'narracion.txt').write_text('\n\n'.join(s[2] for s in scenes))
+           print('VIDEO VALIDATED:',probe['format']['duration'],'seconds; audio present')
+          asyncio.run(main())
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: techinventory-narrated-video
+          path: |
+            video-output/TechInventory_NoSQL_Backup.mp4
+            video-output/video-validation.json
+            video-output/narracion.txt
+            video-output/slide-*.png
+          retention-days: 30
