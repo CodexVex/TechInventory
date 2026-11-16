@@ -17,6 +17,7 @@ cleanup() {
  rc=$?
  if (( stopped )); then docker compose start couchdb app >/dev/null || rc=1; fi
  if [[ -f "$stage/restore.yaml" ]]; then docker compose -p "$project" -f "$stage/restore.yaml" down -v >/dev/null 2>&1 || true; fi
+ docker run --rm -v "$stage:/cleanup" alpine:3.22 chown -R "$(id -u):$(id -g)" /cleanup || rc=1
  rm -rf "$stage"
  exit "$rc"
 }
