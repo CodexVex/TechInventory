@@ -1,0 +1,46 @@
+name: Backup and restore drill
+on:
+  push:
+    branches: [main]
+    paths: ['backup.sh', '.github/workflows/backup-drill.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  physical-backup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci && npm run setup
+      - run: docker compose up -d --build --wait --wait-timeout 180
+      - name: Create disposable demonstration asset
+        run: |
+          docker compose exec -T app node --input-type=module <<'JS'
+          import {CouchDB} from './server/db.js';
+          const db=new CouchDB(process.env.COUCHDB_URL);
+          await db.put({_id:'asset:BACKUP-DEMO',type:'asset',code:'BACKUP-DEMO',name:'Equipo de demostración',status:'Disponible'});
+          JS
+      - name: Encrypt physical backup and verify isolated restore
+        env:
+          BACKUP_PASSPHRASE_FILE: /tmp/techinventory-backup-key
+          BACKUP_DIR: /tmp/techinventory-private-backups
+        run: |
+          umask 077
+          openssl rand -base64 48 > "$BACKUP_PASSPHRASE_FILE"
+          bash backup.sh
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: backup-restore-evidence
+          path: evidence/backup/*.json
+          retention-days: 30
+      - if: always()
+        run: |
+          docker compose down -v
+          rm -f /tmp/techinventory-backup-key
+          rm -rf /tmp/techinventory-private-backups
